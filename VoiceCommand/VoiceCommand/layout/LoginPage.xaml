@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="VoiceCommand.LoginPage">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+    iOS="20, 40, 20, 20"
+    Android="20, 20, 20, 20"
+    WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="FillAndExpand"
+    HorizontalOptions="FillAndExpand"
+    Orientation="Vertical"
+    Spacing="15">
+      <Label Text="Welcome to VoiceCommand App!" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+      <Label Text="Enter Your login to oort..." FontSize="16" HorizontalOptions="Center" VerticalOptions="Center"/>
+      <Entry x:Name="loginText" />
+      <Label Text="...and Your password" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center"/>
+      <Entry x:Name="passwordText" IsPassword="true"/>
+      
+      <Button x:Name="loginButton" Text="Log in!" IsEnabled="true" Clicked="OnLogin"/>
+
+      <Label x:Name="loginInfo" Text="" IsVisible="false" />
+
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
