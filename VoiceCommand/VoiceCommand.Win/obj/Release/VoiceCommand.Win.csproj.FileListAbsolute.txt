@@ -43,3 +43,6 @@ C:\Users\Krzysztof\Documents\studia\!praca magisterska\VoiceCommand\VoiceCommand
 C:\Users\Krzysztof\Documents\GIT\VoiceCommandApp\VoiceCommand\VoiceCommand.Win\bin\Release\VoiceCommand.Win.exe.config
 C:\Users\Krzysztof\Documents\GIT\VoiceCommandApp\VoiceCommand\VoiceCommand.Win\obj\Release\VoiceCommand.Win.exe
 C:\Users\Krzysztof\Documents\GIT\VoiceCommandApp\VoiceCommand\VoiceCommand.Win\obj\Release\VoiceCommand.Win.pdb
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\VoiceCommand.Win.exe.config
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\obj\Release\VoiceCommand.Win.exe
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\obj\Release\VoiceCommand.Win.pdb
