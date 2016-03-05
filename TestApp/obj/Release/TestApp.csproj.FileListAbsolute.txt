@@ -1,0 +1,5 @@
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\TestApp\bin\Release\TestApp.exe.config
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\TestApp\bin\Release\TestApp.exe
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\TestApp\bin\Release\TestApp.pdb
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\TestApp\obj\Release\TestApp.exe
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\TestApp\obj\Release\TestApp.pdb

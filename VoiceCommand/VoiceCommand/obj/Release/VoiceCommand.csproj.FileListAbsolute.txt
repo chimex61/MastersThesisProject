@@ -39,3 +39,5 @@ C:\Users\Krzysztof\Documents\studia\!praca magisterska\VoiceCommand\VoiceCommand
 C:\Users\Krzysztof\Documents\studia\!praca magisterska\VoiceCommand\VoiceCommand\VoiceCommand\obj\Release\LoginPage.xaml.g.cs
 C:\Users\Krzysztof\Documents\studia\!praca magisterska\VoiceCommand\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.dll
 C:\Users\Krzysztof\Documents\studia\!praca magisterska\VoiceCommand\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.pdb
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.dll.mdb
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\VoiceCommand.dll.mdb
