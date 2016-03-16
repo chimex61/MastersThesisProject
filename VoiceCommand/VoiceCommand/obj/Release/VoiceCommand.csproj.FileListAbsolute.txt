@@ -39,5 +39,23 @@ C:\Users\Krzysztof\Documents\studia\!praca magisterska\VoiceCommand\VoiceCommand
 C:\Users\Krzysztof\Documents\studia\!praca magisterska\VoiceCommand\VoiceCommand\VoiceCommand\obj\Release\LoginPage.xaml.g.cs
 C:\Users\Krzysztof\Documents\studia\!praca magisterska\VoiceCommand\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.dll
 C:\Users\Krzysztof\Documents\studia\!praca magisterska\VoiceCommand\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.pdb
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.dll.mdb
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\VoiceCommand.dll.mdb
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\VoiceCommand.dll.config
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\VoiceCommand.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\VoiceCommand.pdb
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\Newtonsoft.Json.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\System.Net.Http.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\System.Net.Http.Extensions.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\System.Net.Http.Primitives.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\Xamarin.Forms.Core.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\Xamarin.Forms.Xaml.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\Newtonsoft.Json.xml
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\System.Net.Http.xml
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\System.Net.Http.Extensions.xml
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\System.Net.Http.Primitives.xml
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\Xamarin.Forms.Core.xml
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\Xamarin.Forms.Xaml.xml
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.csproj.App.config
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.csprojResolveAssemblyReference.cache
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\LoginPage.xaml.g.cs
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.pdb
