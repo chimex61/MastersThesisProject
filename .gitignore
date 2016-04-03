@@ -1,0 +1,13 @@
+#ignoring Debug and Release
+Debug/
+Release/
+testDll/Release/
+
+#ignoring all bin folders
+LibServ/bin/
+TestApp/bin/
+VoiceCommand/VoiceCommand/bin/
+VoiceCommand/VoiceCommand.Droid/bin/
+VoiceCommand/VoiceCommand.iOS/bin/
+VoiceCommand/VoiceCommand.Win/bin/
+VoiceCommand/VoiceCommand.WinPhone/Bin/

@@ -13,12 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Runtime.InteropServices; //P/Invoke
+using LibServ;
 
 namespace VoiceCommand.Win
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private Account oAccount;
@@ -61,6 +59,8 @@ namespace VoiceCommand.Win
                 if (oServ.oAcc.Token != null)
                 {
                     LOGIN_INFO.Content = "Yours access token: " + oServ.oAcc.Token;
+
+                    await oServ.GetAccess();
                 }
                 else
                 {

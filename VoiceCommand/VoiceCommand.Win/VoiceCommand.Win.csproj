@@ -99,9 +99,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VoiceCommand\VoiceCommand.csproj">
-      <Project>{362a2203-3545-4a28-b62f-2bf545575e54}</Project>
-      <Name>VoiceCommand</Name>
+    <ProjectReference Include="..\..\LibServ\LibServ.csproj">
+      <Project>{653bfcd7-2f70-4ae6-81c1-2a46a890c6a0}</Project>
+      <Name>LibServ</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

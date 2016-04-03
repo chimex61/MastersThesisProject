@@ -49,14 +49,8 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\VoiceCommand.Win.exe
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\VoiceCommand.Win.pdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\Platform.Invoke.dll
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\VoiceCommand.dll
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\Xamarin.Forms.Core.dll
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\Xamarin.Forms.Xaml.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\Newtonsoft.Json.dll
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\VoiceCommand.pdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\Platform.Invoke.xml
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\Xamarin.Forms.Core.xml
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\Xamarin.Forms.Xaml.xml
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\Newtonsoft.Json.xml
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\obj\Release\VoiceCommand.Win.csprojResolveAssemblyReference.cache
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\obj\Release\MainWindow.baml
@@ -66,3 +60,5 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\obj\Release\VoiceCommand.Win.g.resources
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\obj\Release\VoiceCommand.Win.Properties.Resources.resources
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\obj\Release\VoiceCommand.Win.csproj.GenerateResource.Cache
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\LibServ.exe
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Win\bin\Release\LibServ.pdb
