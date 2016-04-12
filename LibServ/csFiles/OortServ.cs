@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Net.Http;
+using System.Net;
+using System.IO;
+using RestSharp;
+using System.Collections.Specialized;
 
 namespace LibServ
 {
@@ -16,7 +20,7 @@ namespace LibServ
         private Dictionary<string, string> oCurlParameters = new Dictionary<string, string>();
         private Dictionary<string, string> oCurlParams = new Dictionary<string, string>();
 
-        HttpClient oClient = new HttpClient();
+        
 
         public OortServ(Account oAccount)
         {
@@ -30,6 +34,8 @@ namespace LibServ
         // Gets the access token from server
         public async Task GetToken()
         {
+            HttpClient oClient = new HttpClient();
+
             var content = new FormUrlEncodedContent(oCurlParameters);
 
             var resp = await oClient.PostAsync(sUrlAuth, content);
@@ -45,17 +51,38 @@ namespace LibServ
             }
         }
 
-        // Do poprawki, zła metoda dla HttpClient
         public async Task GetAccess()
         {
-            oCurlParams.Add("Authorization", "Bearer " + oAcc.Token);
+            try
+            {
+                /*
+                HttpClient oClient = new HttpClient();
+                var content = new FormUrlEncodedContent(oCurlParams);
 
-            var content = new FormUrlEncodedContent(oCurlParams);
+                oClient.DefaultRequestHeaders.TryAddWithoutValidation("Authorization", "Bearer " + oAcc.Token);
 
-            var resp = await oClient.PostAsync(sUrlRest, content);
-            var json = await resp.Content.ReadAsStringAsync();
+                var resp = await oClient.PostAsync(sUrlRest, content);
 
-            Dictionary<string, string> m = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+                var json = await resp.Content.ReadAsStringAsync();
+                */
+                var oClient = new RestClient(sUrlRest);
+                var request = new RestRequest();
+                request.AddHeader("Authorization", "Bearer " + oAcc.Token);
+
+                //var response = oClient.Execute(request);
+                //var content = response.Content;
+
+                oClient.ExecuteAsync(request, response =>
+                {
+                    Console.WriteLine(response.Content);
+                });
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            
         }
     }
+
 }

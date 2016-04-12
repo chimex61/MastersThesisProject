@@ -60,7 +60,7 @@ namespace VoiceCommand.Win
                 {
                     LOGIN_INFO.Content = "Yours access token: " + oServ.oAcc.Token;
 
-                    await oServ.GetAccess();
+                    oServ.GetAccess();
                 }
                 else
                 {
