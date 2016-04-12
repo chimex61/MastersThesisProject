@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceCommand.WinPhone", "VoiceCommand\VoiceCommand.WinPhone\VoiceCommand.WinPhone.csproj", "{57EE83A0-74D9-4E38-97E7-DA8FACCB63F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceCommand", "VoiceCommand\VoiceCommand\VoiceCommand.csproj", "{362A2203-3545-4A28-B62F-2BF545575E54}"
+	ProjectSection(ProjectDependencies) = postProject
+		{653BFCD7-2F70-4AE6-81C1-2A46A890C6A0} = {653BFCD7-2F70-4AE6-81C1-2A46A890C6A0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceCommand.Win", "VoiceCommand\VoiceCommand.Win\VoiceCommand.Win.csproj", "{20294500-6A21-4F44-9E48-45EE33FAD441}"
 EndProject

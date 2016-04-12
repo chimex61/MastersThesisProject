@@ -15,8 +15,13 @@ namespace LibServ
     public class OortServ
     {
         public Account oAcc { get; private set; }
+        
         private string sUrlAuth = "https://my.oort.in/auth-system/authz/password";
         private string sUrlRest = "https://my.oort.in/rest-service/";
+        private string sUrlDev = "https://my.oort.in/rest-service/v1/devices";
+        private string sUrlGroups = "https:/my.oort.in/rest-service/v1/groups";
+
+
         private Dictionary<string, string> oCurlParameters = new Dictionary<string, string>();
         private Dictionary<string, string> oCurlParams = new Dictionary<string, string>();
 
@@ -82,6 +87,49 @@ namespace LibServ
                 Console.WriteLine("Error: " + ex.Message);
             }
             
+        }
+
+        public async Task GetGroups()
+        {
+            try
+            {
+                var oClient = new RestClient(sUrlGroups);
+                var request = new RestRequest();
+                request.AddHeader("Authorization", "Bearer " + oAcc.Token);
+
+                oClient.ExecuteAsync(request, response =>
+                {
+                    Console.WriteLine(response.Content);
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+        }
+
+        public async Task GetDevices()
+        {
+            try
+            {
+                var oClient = new RestClient(sUrlDev);
+                var request = new RestRequest();
+                request.AddHeader("Authorization", "Bearer " + oAcc.Token);
+
+                oClient.ExecuteAsync(request, response =>
+                {
+                    Console.WriteLine(response.Content);
+                });
+
+                /*
+                 * Trzeba przeszukać json'a i odnaleźć ID poszczególnych urządzeń.
+                 * ID jest potrzebne, żeby później odwoływać się do określonego urządzenia i nim zarządzać.
+                 */
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
     }
 
