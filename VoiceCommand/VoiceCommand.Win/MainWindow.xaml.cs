@@ -61,6 +61,7 @@ namespace VoiceCommand.Win
                     LOGIN_INFO.Content = "Yours access token: " + oServ.oAcc.Token;
 
                     oServ.GetAccess();
+                    //oServ.GetDevices();
                 }
                 else
                 {
