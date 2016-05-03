@@ -1,0 +1,3 @@
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/ALL_BUILD.dir
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/ZERO_CHECK.dir

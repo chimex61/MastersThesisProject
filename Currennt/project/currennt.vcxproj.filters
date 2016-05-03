@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\Configuration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\data_sets\DataSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\data_sets\DataSetFraction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\JsonClasses.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\InputLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\Layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\PostOutputLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\NeuralNetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\Configuration.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\data_sets\DataSet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\data_sets\DataSetFraction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\cublas.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\JsonClasses.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\JsonClassesForward.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\Matrix.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\printVector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\LayerFactory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\BinaryClassificationLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\CePostOutputLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\FeedForwardLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\InputLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\Layer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\LstmLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\MulticlassClassificationLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\PostOutputLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\RmsePostOutputLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\SoftmaxLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\SseMaskPostOutputLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\SsePostOutputLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\TrainableLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\WeightedSsePostOutputLayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\NeuralNetwork.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\optimizers\Optimizer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\optimizers\SteepestDescentOptimizer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\Types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\netcdf\netcdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\document.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\filestream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\internal\pow10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\internal\stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\internal\strfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\prettywriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\rapidjson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\stringbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\rapidjson\writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\cublas.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\Matrix.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\LayerFactory.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\BinaryClassificationLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\CePostOutputLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\FeedForwardLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\LstmLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\MulticlassClassificationLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\RmsePostOutputLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\SoftmaxLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\SseMaskPostOutputLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\SsePostOutputLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\TrainableLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\layers\WeightedSsePostOutputLayer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\optimizers\Optimizer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\optimizers\SteepestDescentOptimizer.cu" />
+    <CustomBuild Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\activation_functions\Identity.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\activation_functions\Logistic.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\activation_functions\Max2min0.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\activation_functions\Maxmin1.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\activation_functions\Maxmin2.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\activation_functions\Tanh.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\boundRange.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\getRawPointer.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\limitedError.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\max.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\min.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\NumericLimits.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\safeExp.cuh" />
+    <None Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\sources\currennt_lib\src\helpers\TypedMath.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\helpers\$(Configuration)\currennt_generated_cublas.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\helpers\$(Configuration)\currennt_generated_Matrix.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\$(Configuration)\currennt_generated_LayerFactory.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_BinaryClassificationLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_CePostOutputLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_FeedForwardLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_LstmLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_MulticlassClassificationLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_RmsePostOutputLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_SoftmaxLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_SseMaskPostOutputLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_SsePostOutputLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_TrainableLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\layers\$(Configuration)\currennt_generated_WeightedSsePostOutputLayer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\optimizers\$(Configuration)\currennt_generated_Optimizer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\Users\Tomek\Documents\Github\MastersThesisProject\Currennt\project\CMakeFiles\currennt.dir\currennt_lib\src\optimizers\$(Configuration)\currennt_generated_SteepestDescentOptimizer.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{203C9EB4-8392-3B91-A0A5-48CF14374B1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B658B37A-4E37-350B-8CD7-07D68E6AEEAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{E2226941-7895-3DC5-A62E-5B43DFE2F0F0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

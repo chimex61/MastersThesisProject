@@ -1,0 +1,68 @@
+# CMake generation dependency list for this directory.
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/sources/CMakeLists.txt
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/3.5.1/CMakeSystem.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/3.5.1/CMakeCCompiler.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/3.5.1/CMakeCXXCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeGenericSystem.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/WindowsPaths.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeLanguageInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows-MSVC.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/3.5.1/CMakeRCCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeRCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeCXXInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeLanguageInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindBoost.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindThreads.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CheckLibraryExists.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CheckSymbolExists.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CheckIncludeFile.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeParseArguments.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/helpers/currennt_generated_cublas.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/helpers/currennt_generated_Matrix.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/currennt_generated_LayerFactory.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_BinaryClassificationLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_CePostOutputLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_FeedForwardLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_LstmLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_MulticlassClassificationLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_RmsePostOutputLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_SoftmaxLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_SseMaskPostOutputLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_SsePostOutputLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_TrainableLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/layers/currennt_generated_WeightedSsePostOutputLayer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/optimizers/currennt_generated_Optimizer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Tomek/Documents/Github/MastersThesisProject/Currennt/project/CMakeFiles/currennt.dir/currennt_lib/src/optimizers/currennt_generated_SteepestDescentOptimizer.cu.obj.depend
+C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/FindCUDA/run_nvcc.cmake
