@@ -18,14 +18,12 @@ namespace VoiceCommand
             bool isPass = false;
             bool isLogin = false;
 
-
-
-            if (!string.IsNullOrWhiteSpace(loginText.Text))
+            if ( !string.IsNullOrWhiteSpace( loginText.Text ) )
             {
                 isLogin = true;
             }
 
-            if (!string.IsNullOrWhiteSpace(passwordText.Text))
+            if ( !string.IsNullOrWhiteSpace( passwordText.Text ) )
             {
                 isPass = true;
             }
@@ -42,13 +40,14 @@ namespace VoiceCommand
                 loginInfo.Text = "Logging ...";
                 loginInfo.IsVisible = true;
 
-                oAccount = new Account(loginText.Text, passwordText.Text);
-                OortServ oServ = new OortServ(oAccount);
+                oAccount = new Account( loginText.Text.Trim(), passwordText.Text );
+                OortServ oServ = new OortServ( oAccount );
                 await oServ.GetToken();
 
-                if (oServ.oAcc.Token != null)
+                if ( oServ.oAcc.Token != null )
                 {
                     loginInfo.Text = "Yours access token: " + oServ.oAcc.Token;
+                    await Navigation.PushModalAsync( new VoiceCommand.MainPage() );
                 }
                 else
                 {

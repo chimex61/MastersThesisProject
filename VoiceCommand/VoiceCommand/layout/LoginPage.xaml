@@ -13,17 +13,31 @@ x:Class="VoiceCommand.LoginPage">
     HorizontalOptions="FillAndExpand"
     Orientation="Vertical"
     Spacing="15">
-      <Label Text="Welcome to VoiceCommand App!" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
 
-      <Label Text="Enter Your login to oort..." FontSize="16" HorizontalOptions="Center" VerticalOptions="Center"/>
-      <Entry x:Name="loginText" />
-      <Label Text="...and Your password" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center"/>
-      <Entry x:Name="passwordText" IsPassword="true"/>
+      <Grid BackgroundColor="Transparent">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="120"/>
+          <RowDefinition Height="1*"/>
+          <RowDefinition Height="auto"/>
+          <RowDefinition Height="1*"/>
+          <RowDefinition Height="auto"/>
+          <RowDefinition Height="40"/>
+          <RowDefinition Height="1*"/>
+          <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="Welcome to VoiceCommand App!" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0"/>
+                
+        <Label Text="Enter Your login to oort..." FontSize="16" HorizontalOptions="Center" VerticalOptions="End" Grid.Row="1"/>
+        <Entry x:Name="loginText" Grid.Row="2"/>
+        
+        <Label Text="...and Your password" FontSize="16" HorizontalOptions="Center" VerticalOptions="End" Grid.Row="3"/>
+        <Entry x:Name="passwordText" IsPassword="true" Grid.Row="4"/>
       
-      <Button x:Name="loginButton" Text="Log in!" IsEnabled="true" Clicked="OnLogin"/>
+        <Button x:Name="loginButton" Text="Log in!" IsEnabled="true" Grid.Row="6" Clicked="OnLogin"/>
 
-      <Label x:Name="loginInfo" Text="" IsVisible="false" />
-
+        <Label x:Name="loginInfo" Text="" IsVisible="false" VerticalOptions="End" Grid.Row="7"/>
+    </Grid>
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

@@ -12,7 +12,8 @@ namespace VoiceCommand
     {
         public App()
         {
-            MainPage = new VoiceCommand.LoginPage();//new NavigationPage (new VoiceCommand.LoginPage());
+           //MainPage = new VoiceCommand.LoginPage();
+			MainPage = new NavigationPage (new VoiceCommand.LoginPage());
         }
 
         protected override void OnStart()

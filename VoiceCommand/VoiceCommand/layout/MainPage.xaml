@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="VoiceCommand.MainPage">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+    iOS="20, 40, 20, 20"
+    Android="20, 20, 20, 20"
+    WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="FillAndExpand"
+    HorizontalOptions="FillAndExpand"
+    Orientation="Vertical"
+    Spacing="15">
+
+      <Grid BackgroundColor="Transparent">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="15*"/>
+          <RowDefinition Height="3*"/>
+          <RowDefinition Height="3*"/>
+          <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="Choose service and speak!" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0"/>
+
+        <Button x:Name="WitAiButton" Text="Wit.ai" IsEnabled="true" Grid.Row="1"/>
+        <Button x:Name="GoogleButton" Text="Google Now" IsEnabled="true" Grid.Row="2"/>
+        <Button x:Name="DLButton" Text="Deep Learning" IsEnabled="true" Grid.Row="3"/>
+
+      </Grid>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
