@@ -79,3 +79,4 @@ C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\o
 C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\LoginPage.xaml.g.cs
 C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.dll
 C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.pdb
+C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\MainPage.xaml.g.cs
