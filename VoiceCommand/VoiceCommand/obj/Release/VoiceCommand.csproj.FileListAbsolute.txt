@@ -55,7 +55,6 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\Xamarin.Forms.Core.xml
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Release\Xamarin.Forms.Xaml.xml
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.csproj.App.config
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.csprojResolveAssemblyReference.cache
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\LoginPage.xaml.g.cs
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.pdb
@@ -80,3 +79,4 @@ C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\o
 C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.dll
 C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\VoiceCommand.pdb
 C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\MainPage.xaml.g.cs
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Release\MainPage.xaml.g.cs

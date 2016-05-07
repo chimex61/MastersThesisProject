@@ -14,6 +14,7 @@ x:Class="VoiceCommand.LoginPage">
     Orientation="Vertical"
     Spacing="15">
 
+      
       <Grid BackgroundColor="Transparent">
         <Grid.RowDefinitions>
           <RowDefinition Height="120"/>
@@ -25,8 +26,9 @@ x:Class="VoiceCommand.LoginPage">
           <RowDefinition Height="1*"/>
           <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-
-        <Label Text="Welcome to VoiceCommand App!" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0"/>
+        
+        <Image Source="welcome_to_voice_command.png" Scale="1.0" VerticalOptions="Center" Grid.Row="0"/>
+        <!-- <Label Text="Welcome to VoiceCommand App!" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0"/> -->
                 
         <Label Text="Enter Your login to oort..." FontSize="16" HorizontalOptions="Center" VerticalOptions="End" Grid.Row="1"/>
         <Entry x:Name="loginText" Grid.Row="2"/>
