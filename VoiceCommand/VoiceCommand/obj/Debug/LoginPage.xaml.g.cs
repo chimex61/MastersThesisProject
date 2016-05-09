@@ -22,6 +22,8 @@ namespace VoiceCommand {
         
         private Button loginButton;
         
+        private ActivityIndicator progressIndicator;
+        
         private Label loginInfo;
         
         private void InitializeComponent() {
@@ -29,6 +31,7 @@ namespace VoiceCommand {
             loginText = this.FindByName<Entry>("loginText");
             passwordText = this.FindByName<Entry>("passwordText");
             loginButton = this.FindByName<Button>("loginButton");
+            progressIndicator = this.FindByName<ActivityIndicator>("progressIndicator");
             loginInfo = this.FindByName<Label>("loginInfo");
         }
     }

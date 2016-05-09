@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-x:Class="VoiceCommand.LoginPage">
+x:Class="VoiceCommand.LoginPage"
+NavigationPage.HasNavigationBar="false">
   <ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness"
     iOS="20, 40, 20, 20"
@@ -25,6 +26,7 @@ x:Class="VoiceCommand.LoginPage">
           <RowDefinition Height="40"/>
           <RowDefinition Height="1*"/>
           <RowDefinition Height="1*"/>
+          <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         
         <Image Source="welcome_to_voice_command.png" Scale="1.0" VerticalOptions="Center" Grid.Row="0"/>
@@ -37,8 +39,9 @@ x:Class="VoiceCommand.LoginPage">
         <Entry x:Name="passwordText" IsPassword="true" Grid.Row="4"/>
       
         <Button x:Name="loginButton" Text="Log in!" IsEnabled="true" Grid.Row="6" Clicked="OnLogin"/>
-
-        <Label x:Name="loginInfo" Text="" IsVisible="false" VerticalOptions="End" Grid.Row="7"/>
+        
+        <ActivityIndicator x:Name="progressIndicator" IsRunning="False" IsVisible="False" VerticalOptions="Center" Grid.Row="7" />
+        <Label x:Name="loginInfo" Text="" IsVisible="false" VerticalOptions="End" HorizontalOptions="Center" Grid.Row="8"/> 
     </Grid>
     </StackLayout>
   </ContentPage.Content>

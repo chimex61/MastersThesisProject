@@ -39,6 +39,8 @@ namespace VoiceCommand
             {
                 loginInfo.Text = "Logging ...";
                 loginInfo.IsVisible = true;
+                progressIndicator.IsVisible = true;
+                progressIndicator.IsRunning = true;
 
                 oAccount = new Account( loginText.Text.Trim(), passwordText.Text );
                 OortServ oServ = new OortServ( oAccount );
@@ -46,12 +48,18 @@ namespace VoiceCommand
 
                 if ( oServ.oAcc.Token != null )
                 {
-                    loginInfo.Text = "Yours access token: " + oServ.oAcc.Token;
+                    //loginInfo.Text = "Yours access token: " + oServ.oAcc.Token;
+                    loginInfo.Text = "Logged";
+
                     await Navigation.PushModalAsync( new VoiceCommand.MainPage() );
+
+                    loginInfo.IsVisible = false;
+                    progressIndicator.IsVisible = false;
                 }
                 else
                 {
                     loginInfo.Text = "Login or/and password is incorrect.";
+                    progressIndicator.IsVisible = false;
                 }
             }
             else

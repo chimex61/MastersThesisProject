@@ -26,8 +26,6 @@ C:\Users\Krzysztof\Documents\Visual Studio 2013\Projects\VoiceCommand\VoiceComma
 C:\Users\Krzysztof\Documents\Visual Studio 2013\Projects\VoiceCommand\VoiceCommand\VoiceCommand.Droid\obj\Debug\android\bin\com.voicecommanddroid.apk
 C:\Users\Krzysztof\Documents\Visual Studio 2013\Projects\VoiceCommand\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll.mdb
 C:\Users\Krzysztof\Documents\Visual Studio 2013\Projects\VoiceCommand\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll.mdb
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.csprojResolveAssemblyReference.cache
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll.config
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.pdb
@@ -44,6 +42,8 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.csprojResolveAssemblyReference.cache
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.pdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\android\bin\com.voicecommanddroid.apk
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\res\drawable\icon.png
@@ -55,6 +55,5 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\res\drawable\welcome_to_voice_command.png
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\R.cs.flag
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\uploadflags.txt
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.dll.mdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll.mdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll.mdb
