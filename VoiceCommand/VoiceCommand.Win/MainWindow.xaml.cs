@@ -51,6 +51,7 @@ namespace VoiceCommand.Win
             if (log)
             {
                 LOGIN_INFO.Content = "Logging ...";
+                progressIndicator.Visibility = System.Windows.Visibility.Visible;
 
                 oAccount = new Account(USER_LOGIN.Text, USER_PASSWORD.Password);
                 OortServ oServ = new OortServ(oAccount);
@@ -58,7 +59,8 @@ namespace VoiceCommand.Win
 
                 if (oServ.oAcc.Token != null)
                 {
-                    LOGIN_INFO.Content = "Yours access token: " + oServ.oAcc.Token;
+                    LOGIN_INFO.Content = "Logged";
+                    progressIndicator.Visibility = System.Windows.Visibility.Hidden;
 
                     oServ.GetAccess();
                     //oServ.GetDevices();
@@ -66,6 +68,7 @@ namespace VoiceCommand.Win
                 else
                 {
                     LOGIN_INFO.Content = "Login or/and password is incorrect.";
+                    progressIndicator.Visibility = System.Windows.Visibility.Hidden;
                 }
             }
             else
