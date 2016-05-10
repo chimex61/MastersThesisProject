@@ -11,3 +11,6 @@ VoiceCommand/VoiceCommand.Droid/bin/
 VoiceCommand/VoiceCommand.iOS/bin/
 VoiceCommand/VoiceCommand.Win/bin/
 VoiceCommand/VoiceCommand.WinPhone/Bin/
+
+#ignoring Postman files
+*.postman_collection
