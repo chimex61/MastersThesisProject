@@ -61,22 +61,9 @@ namespace LibServ
         {
             try
             {
-                /*
-                HttpClient oClient = new HttpClient();
-                var content = new FormUrlEncodedContent(oCurlParams);
-
-                oClient.DefaultRequestHeaders.TryAddWithoutValidation("Authorization", "Bearer " + oAcc.Token);
-
-                var resp = await oClient.PostAsync(sUrlRest, content);
-
-                var json = await resp.Content.ReadAsStringAsync();
-                */
                 var oClient = new RestClient(sUrlRest);
                 var request = new RestRequest();
                 request.AddHeader("Authorization", "Bearer " + oAcc.Token);
-
-                //var response = oClient.Execute(request);
-                //var content = response.Content;
 
                 oClient.ExecuteAsync(request, response =>
                 {

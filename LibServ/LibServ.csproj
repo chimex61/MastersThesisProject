@@ -65,6 +65,7 @@
     <Compile Include="csFiles\Account.cs" />
     <Compile Include="csFiles\Elements.cs" />
     <Compile Include="csFiles\OortServ.cs" />
+    <Compile Include="csFiles\WitAiServ.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

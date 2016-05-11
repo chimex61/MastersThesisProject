@@ -9,10 +9,28 @@ namespace LibServ
 {
     public class Device
     {
+        // ID of the device
         public string DevID { get; set; }
-        public string DevName { get; set; }
-    }
 
+        // Name of the device
+        public string DevName { get; set; }
+
+        // True if the device is in SmartHub range
+        public bool InRange { get; set; }
+
+        // Type of the device
+        // In our set there are four types:
+        // - OORT SmartFinder
+        // - OORT SmartLED
+        // - OORT SmartLED2
+        // - OORT SmartSocket
+        public string DevType { get; set; }
+
+        /*
+        * There is need to recognize the dev type when user wants to
+        * perform some action - every device has a different panel number
+        */
+    }
 
     public class SmartLED : Device
     {
@@ -291,5 +309,19 @@ namespace LibServ
     public class Beacon : Device
     {
 
+    }
+
+    public class Group
+    {
+        // ID of the group
+        public string GroupID { get; set; }
+
+        // Name of the group
+        public string GroupName { get; set; }
+
+        // List of the devices in the group
+        // To perform any action you have to call
+        // every device separately
+        public List<string> DevList { get; set; }
     }
 }
