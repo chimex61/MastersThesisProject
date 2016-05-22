@@ -44,7 +44,7 @@ namespace VoiceCommand.Win
             return isPass & isLogin;
         }
 
-        private async void OnLogin(object sender, RoutedEventArgs e)
+        private async void OnLogin( object sender, RoutedEventArgs e )
         {
             bool log = CanLogIn();
 
@@ -53,8 +53,8 @@ namespace VoiceCommand.Win
                 LOGIN_INFO.Content = "Logging ...";
                 progressIndicator.Visibility = System.Windows.Visibility.Visible;
 
-                oAccount = new Account(USER_LOGIN.Text, USER_PASSWORD.Password);
-                OortServ oServ = new OortServ(oAccount);
+                oAccount = new Account( USER_LOGIN.Text, USER_PASSWORD.Password );
+                OortServ oServ = new OortServ( oAccount );
                 await oServ.GetToken();
 
                 if (oServ.oAcc.Token != null)
@@ -64,6 +64,8 @@ namespace VoiceCommand.Win
 
                     oServ.GetAccess();
                     //oServ.GetDevices();
+                    HideComponents();
+                    _NavigationFrame.Navigate( new MainPage() );
                 }
                 else
                 {
@@ -75,6 +77,17 @@ namespace VoiceCommand.Win
             {
                 LOGIN_INFO.Content = "Put all credentials into proper fields.";
             }
+        }
+
+        private void HideComponents()
+        {
+            LOGIN_LABEL.Visibility = System.Windows.Visibility.Hidden;
+            USER_LOGIN.Visibility = System.Windows.Visibility.Hidden;
+            PASS_LABEL.Visibility = System.Windows.Visibility.Hidden;
+            USER_PASSWORD.Visibility = System.Windows.Visibility.Hidden;
+            LOG_IN_BUTTON.Visibility = System.Windows.Visibility.Hidden;
+            progressIndicator.Visibility = System.Windows.Visibility.Hidden;
+            LOGIN_INFO.Visibility = System.Windows.Visibility.Hidden;
         }
     }
 }

@@ -1,0 +1,26 @@
+﻿<Page x:Class="VoiceCommand.Win.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="MainPage">
+<!--  -->
+    <!--     <Grid> -->
+    <!--          -->
+    <!--     </Grid-->
+    
+    <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="14*"/>
+          <RowDefinition Height="3*"/>
+          <RowDefinition Height="3*"/>
+          <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Button Name="WitAiButton" Content="Wit.ai" IsEnabled="true" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Height="29" Padding="0" BorderThickness="0" Background="#FF3E3E3E" FontWeight="Bold" Foreground="#FFE6E6E6" Click="OnRecord" Grid.Row="1"/>
+        <Button Name="DLButton" Content="Deep Learning" IsEnabled="true" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Height="29" Padding="0" BorderThickness="0" Background="#FF3E3E3E" FontWeight="Bold" Foreground="#FFE6E6E6" Click="OnStop" Grid.Row="2"/>
+
+      </Grid>
+</Page>
