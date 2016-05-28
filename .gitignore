@@ -1,4 +1,5 @@
 #ignoring Debug and Release
+Release/
 Debug/
 testDll/Release/
 
