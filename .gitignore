@@ -1,6 +1,5 @@
 #ignoring Debug and Release
 Debug/
-Release/
 testDll/Release/
 
 #ignoring all bin folders
