@@ -31,7 +31,8 @@ namespace VoiceCommand.Win
         private void OnRecord( object sender, RoutedEventArgs e )
         {
             mic.ListDevices();
-            mic.RecordAndPlay();
+            mic.RecordAndSaveWin();
+            //mic.RecordAndPlay();
         }
 
         private void OnStop( object sender, RoutedEventArgs e )
