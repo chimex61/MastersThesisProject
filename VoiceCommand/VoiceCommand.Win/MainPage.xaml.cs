@@ -27,7 +27,9 @@ namespace VoiceCommand.Win
         }
 
         Microphone mic = new Microphone();
+        WitAiServ wit = new WitAiServ();
 
+        // on wit.ai button clicked
         private void OnRecord( object sender, RoutedEventArgs e )
         {
             mic.ListDevices();
@@ -35,9 +37,11 @@ namespace VoiceCommand.Win
             //mic.RecordAndPlay();
         }
 
-        private void OnStop( object sender, RoutedEventArgs e )
+        private async void OnStop( object sender, RoutedEventArgs e )
         {
             mic.StopRecording();
+            byte[] audioFile = mic.ProcessSpeech();
+            await wit.SendItem( audioFile );
         }
     }
 }

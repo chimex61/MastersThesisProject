@@ -62,10 +62,10 @@ namespace LibServ
             try
             {
                 var oClient = new RestClient(sUrlRest);
-                var request = new RestRequest();
-                request.AddHeader("Authorization", "Bearer " + oAcc.Token);
+                var oRequest = new RestRequest();
+                oRequest.AddHeader("Authorization", "Bearer " + oAcc.Token);
 
-                oClient.ExecuteAsync(request, response =>
+                oClient.ExecuteAsync(oRequest, response =>
                 {
                     Console.WriteLine(response.Content);
                 });

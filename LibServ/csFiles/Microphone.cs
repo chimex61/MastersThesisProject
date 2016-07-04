@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace LibServ
 {
@@ -64,7 +65,7 @@ namespace LibServ
         {
             sourceStream = new NAudio.Wave.WaveIn();
             sourceStream.DeviceNumber = deviceNumber;
-            sourceStream.WaveFormat = new NAudio.Wave.WaveFormat(8800, NAudio.Wave.WaveIn.GetCapabilities(deviceNumber).Channels);
+            sourceStream.WaveFormat = new NAudio.Wave.WaveFormat(44100, NAudio.Wave.WaveIn.GetCapabilities(deviceNumber).Channels);
 
             sourceStream.DataAvailable += new EventHandler<NAudio.Wave.WaveInEventArgs>(sourceStream_DataAvailable);
             waveWriter = new NAudio.Wave.WaveFileWriter(fileName, sourceStream.WaveFormat);
@@ -78,6 +79,17 @@ namespace LibServ
 
             waveWriter.Write(e.Buffer, 0, e.BytesRecorded);
             waveWriter.Flush();
+        }
+
+        public byte[] ProcessSpeech()
+        {
+            FileStream fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+            BinaryReader fileReader = new BinaryReader(fileStream);
+            byte[] BA_AudioFile = fileReader.ReadBytes((Int32)fileStream.Length);
+            fileStream.Close();
+            fileReader.Close();
+
+            return BA_AudioFile;
         }
     }
 }
