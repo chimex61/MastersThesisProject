@@ -14,34 +14,29 @@ namespace LibServ
 {
     public class WitAiServ
     {
-        private string sAccessToken = "FRJSRRJ3MLAYXAO2M6KGFCUPV43SLFLI";
-        private string sWitSpeechUrl = "https://api.wit.ai/speech?v=20160602";
+        private string m_sAccessToken = "FJKWWROXJRT26AFUMVVI3C7JWZYRDESJ";
+        private string m_sWitSpeechUrl = "https://api.wit.ai/speech?v=20160602";
 
-        public async Task SendItem( byte[] file )
+        public async Task SendItem( byte[] ba_file )
         {
 
             try
             {
-                var oClient = new RestClient( sWitSpeechUrl );
+                var oClient = new RestClient( m_sWitSpeechUrl );
                 var oRequest = new RestRequest( Method.POST );
                 oRequest.AddHeader( "--data-binary", "@record.wav" );
                 oRequest.AddHeader( "content-type", "audio/wav" );
-                oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
-
-                oRequest.AddParameter( "audio/wav", file, ParameterType.RequestBody );
-
-//                 var response = client.Execute( request );
-//                 //var json = await response.Content.ReadAsStringAsync();
-//                 Console.WriteLine( response.Content );
-
-                oClient.ExecuteAsync(oRequest, response =>
+                oRequest.AddHeader("authorization", "Bearer " + m_sAccessToken );
+                oRequest.AddParameter( "audio/wav", ba_file, ParameterType.RequestBody );
+ 
+                oClient.ExecuteAsync( oRequest, oResponse =>
                 {
-                    Console.WriteLine(response.Content);
+                    Console.WriteLine( oResponse.Content );
                 });
             }
-            catch( Exception ex )
+            catch( Exception oException )
             {
-                Console.WriteLine( "Error: " + ex.Message );
+                Console.WriteLine( "Error: " + oException.Message );
             }           
         }
     }

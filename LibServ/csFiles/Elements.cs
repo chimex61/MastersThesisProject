@@ -49,79 +49,79 @@ namespace LibServ
 //         set brightness
 //         set color
 
-        public void TurnOn( string AccessToken )
+        public void TurnOn( string sAccessToken )
         {
-            string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/3";
+            string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/3";
 
             try
             {
-                var client = new RestClient( url );
-                var request = new RestRequest(Method.POST);
-                request.AddHeader( "authorization", "Bearer " + AccessToken );
-                request.AddHeader( "content-type", "application/json" );
-                request.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
-                IRestResponse response = client.Execute( request );
+                var oClient = new RestClient( sUrl );
+                var oRequest = new RestRequest( Method.POST );
+                oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+                oRequest.AddHeader( "content-type", "application/json" );
+                oRequest.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
+                IRestResponse oResponse = oClient.Execute( oRequest );
             }
-            catch (Exception ex)
+            catch ( Exception oException )
             {
-                Console.WriteLine( "Error: " + ex.Message ); 
+                Console.WriteLine( "Error: " + oException.Message ); 
             } 
         }
 
-        public void TurnOff( string AccessToken )
+        public void TurnOff( string sAccessToken )
         {
-            string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/3";
+            string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/3";
 
             try
             {
-                var client = new RestClient( url );
-                var request = new RestRequest( Method.POST );
-                request.AddHeader( "authorization", "Bearer " + AccessToken );
-                request.AddHeader( "content-type", "application/json" );
-                request.AddParameter( "application/json", "{\"state\": \"OFF\"}", ParameterType.RequestBody );
-                IRestResponse response = client.Execute( request );
+                var oClient = new RestClient( sUrl );
+                var oRequest = new RestRequest( Method.POST );
+                oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+                oRequest.AddHeader( "content-type", "application/json" );
+                oRequest.AddParameter( "application/json", "{\"state\": \"OFF\"}", ParameterType.RequestBody );
+                IRestResponse oResponse = oClient.Execute( oRequest );
             }
-            catch ( Exception ex )
+            catch ( Exception oException )
             {
-                Console.WriteLine( "Error: " + ex.Message );
+                Console.WriteLine( "Error: " + oException.Message );
             }
         }
 
-        public void SetBrightness( string AccessToken, string Value )
+        public void SetBrightness( string sAccessToken, string sValue )
         {
-            string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/slide/7";
+            string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/slide/7";
 
             try
             {
-                var client = new RestClient( url );
-                var request = new RestRequest( Method.POST );
-                request.AddHeader( "authorization", "Bearer " + AccessToken );
-                request.AddHeader( "content-type", "application/json" );
-                request.AddParameter( "application/json", "{\"value\": \"" + Value + "\"}", ParameterType.RequestBody );
-                IRestResponse response = client.Execute( request );
+                var oClient = new RestClient( sUrl );
+                var oRequest = new RestRequest( Method.POST );
+                oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+                oRequest.AddHeader( "content-type", "application/json" );
+                oRequest.AddParameter( "application/json", "{\"value\": \"" + sValue + "\"}", ParameterType.RequestBody );
+                IRestResponse oResponse = oClient.Execute( oRequest );
             }
-            catch ( Exception ex )
+            catch ( Exception oException )
             {
-                Console.WriteLine( "Error: " + ex.Message );
+                Console.WriteLine( "Error: " + oException.Message );
             }
         }
 
-        public void SetColor( string AccessToken, string Value )
+        public void SetColor( string sAccessToken, string sValue )
         {
-            string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/color/7";
+            string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/color/7";
 
             try
             {
-                var client = new RestClient( url );
-                var request = new RestRequest( Method.POST );
-                request.AddHeader( "authorization", "Bearer " + AccessToken );
-                request.AddHeader( "content-type", "application/json" );
-                request.AddParameter( "application/json", "{\"rgb\": \"" + Value + "\"}", ParameterType.RequestBody );
-                IRestResponse response = client.Execute( request );
+                var oClient = new RestClient( sUrl );
+                var oRequest = new RestRequest( Method.POST );
+                oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+                oRequest.AddHeader( "content-type", "application/json" );
+                oRequest.AddParameter( "application/json", "{\"rgb\": \"" + sValue + "\"}", ParameterType.RequestBody );
+                IRestResponse oResponse = oClient.Execute( oRequest );
             }
-            catch ( Exception ex )
+            catch ( Exception oException )
             {
-                Console.WriteLine( "Error: " + ex.Message );
+                Console.WriteLine( "Error: " + oException.Message );
             }
         }
     }
@@ -141,98 +141,98 @@ namespace LibServ
 		public string WhiteTemperatureValue { get; set; }
 
 
-		public void TurnOn( string AccessToken )
+		public void TurnOn( string sAccessToken )
 		{
-			string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/4";
+			string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/4";
 
 			try
 			{
-				var client = new RestClient( url );
-				var request = new RestRequest(Method.POST);
-				request.AddHeader( "authorization", "Bearer " + AccessToken );
-				request.AddHeader( "content-type", "application/json" );
-				request.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
-				IRestResponse response = client.Execute( request );
+				var oClient = new RestClient( sUrl );
+				var oRequest = new RestRequest(Method.POST);
+				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+				oRequest.AddHeader( "content-type", "application/json" );
+				oRequest.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
+				IRestResponse oResponse = oClient.Execute( oRequest );
 			}
-			catch (Exception ex)
+			catch ( Exception oException )
 			{
-				Console.WriteLine( "Error: " + ex.Message ); 
+				Console.WriteLine( "Error: " + oException.Message ); 
 			} 
 		}
 
-		public void TurnOff( string AccessToken )
+		public void TurnOff( string sAccessToken )
 		{
-			string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/4";
+			string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/4";
 
 			try
 			{
-				var client = new RestClient( url );
-				var request = new RestRequest( Method.POST );
-				request.AddHeader( "authorization", "Bearer " + AccessToken );
-				request.AddHeader( "content-type", "application/json" );
-				request.AddParameter( "application/json", "{\"state\": \"OFF\"}", ParameterType.RequestBody );
-				IRestResponse response = client.Execute( request );
+				var oClient = new RestClient( sUrl );
+				var oRequest = new RestRequest( Method.POST );
+				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+				oRequest.AddHeader( "content-type", "application/json" );
+				oRequest.AddParameter( "application/json", "{\"state\": \"OFF\"}", ParameterType.RequestBody );
+				IRestResponse oResponse = oClient.Execute( oRequest );
 			}
-			catch ( Exception ex )
+			catch ( Exception oException )
 			{
-				Console.WriteLine( "Error: " + ex.Message );
+				Console.WriteLine( "Error: " + oException.Message );
 			}
 		}
 
-		public void SetBrightness( string AccessToken, string Value )
+		public void SetBrightness( string sAccessToken, string sValue )
 		{
-			string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/slide/6";
+			string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/slide/6";
 
 			try
 			{
-				var client = new RestClient( url );
-				var request = new RestRequest( Method.POST );
-				request.AddHeader( "authorization", "Bearer " + AccessToken );
-				request.AddHeader( "content-type", "application/json" );
-				request.AddParameter( "application/json", "{\"value\": \"" + Value + "\"}", ParameterType.RequestBody );
-				IRestResponse response = client.Execute( request );
+				var oClient = new RestClient( sUrl );
+				var oRequest = new RestRequest( Method.POST );
+				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+				oRequest.AddHeader( "content-type", "application/json" );
+				oRequest.AddParameter( "application/json", "{\"value\": \"" + sValue + "\"}", ParameterType.RequestBody );
+				IRestResponse oResponse = oClient.Execute( oRequest );
 			}
-			catch ( Exception ex )
+			catch ( Exception oException )
 			{
-				Console.WriteLine( "Error: " + ex.Message );
+				Console.WriteLine( "Error: " + oException.Message );
 			}
 		}
 
-		public void SetColor( string AccessToken, string Value )
+		public void SetColor( string sAccessToken, string sValue )
 		{
-			string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/color/7";
+			string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/color/7";
 
 			try
 			{
-				var client = new RestClient( url );
-				var request = new RestRequest( Method.POST );
-				request.AddHeader( "authorization", "Bearer " + AccessToken );
-				request.AddHeader( "content-type", "application/json" );
-				request.AddParameter( "application/json", "{\"rgb\": \"" + Value + "\"}", ParameterType.RequestBody );
-				IRestResponse response = client.Execute( request );
+				var oClient = new RestClient( sUrl );
+				var oRequest = new RestRequest( Method.POST );
+				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+				oRequest.AddHeader( "content-type", "application/json" );
+				oRequest.AddParameter( "application/json", "{\"rgb\": \"" + sValue + "\"}", ParameterType.RequestBody );
+				IRestResponse oResponse = oClient.Execute( oRequest );
 			}
-			catch ( Exception ex )
+			catch ( Exception oException )
 			{
-				Console.WriteLine( "Error: " + ex.Message );
+				Console.WriteLine( "Error: " + oException.Message );
 			}
 		}
 
-		public void SetWhiteTemperature( string AccessToken, string Value )
+		public void SetWhiteTemperature( string sAccessToken, string sValue )
 		{
-			string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/slide/5";
+			string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/slide/5";
 
 			try
 			{
-				var client = new RestClient( url );
-				var request = new RestRequest( Method.POST );
-				request.AddHeader( "authorization", "Bearer " + AccessToken );
-				request.AddHeader( "content-type", "application/json" );
-				request.AddParameter( "application/json", "{\"value\": \"" + Value + "\"}", ParameterType.RequestBody );
-				IRestResponse response = client.Execute( request );
+				var oClient = new RestClient( sUrl );
+				var oRequest = new RestRequest( Method.POST );
+				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+				oRequest.AddHeader( "content-type", "application/json" );
+				oRequest.AddParameter( "application/json", "{\"value\": \"" + sValue + "\"}", ParameterType.RequestBody );
+				IRestResponse oResponse = oClient.Execute( oRequest );
 			}
-			catch ( Exception ex )
+			catch ( Exception oException )
 			{
-				Console.WriteLine( "Error: " + ex.Message );
+				Console.WriteLine( "Error: " + oException.Message );
 			}
 		}
 	}
@@ -242,22 +242,22 @@ namespace LibServ
         /*id 2, panelType Boolean, state OFF / ON*/
         public string BoolanState { get; set; }
 
-        public void TurnOn( string AccessToken )
+        public void TurnOn( string sAccessToken )
         {
-            string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/2";
+            string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/2";
 
             try
             {
-                var client = new RestClient( url );
-                var request = new RestRequest( Method.POST );
-                request.AddHeader( "authorization", "Bearer " + AccessToken );
-                request.AddHeader( "content-type", "application/json" );
-                request.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
-                IRestResponse response = client.Execute( request );
+                var oClient = new RestClient( sUrl );
+                var oRequest = new RestRequest( Method.POST );
+                oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+                oRequest.AddHeader( "content-type", "application/json" );
+                oRequest.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
+                IRestResponse oResponse = oClient.Execute( oRequest );
             }
-            catch ( Exception ex )
+            catch ( Exception oException )
             {
-                Console.WriteLine( "Error: " + ex.Message ); 
+                Console.WriteLine( "Error: " + oException.Message ); 
             }
         }
     }
@@ -267,48 +267,43 @@ namespace LibServ
 		/*id 3, panelType Boolean, state OFF / ON*/
 		public string BoolanState { get; set; }
 
-		public void TurnOn( string AccessToken )
+		public void TurnOn( string sAccessToken )
 		{
-			string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/3";
+			string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/3";
 
 			try
 			{
-				var client = new RestClient( url );
-				var request = new RestRequest( Method.POST );
-				request.AddHeader( "authorization", "Bearer " + AccessToken );
-				request.AddHeader( "content-type", "application/json" );
-				request.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
-				IRestResponse response = client.Execute( request );
+				var oClient = new RestClient( sUrl );
+				var oRequest = new RestRequest( Method.POST );
+				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+				oRequest.AddHeader( "content-type", "application/json" );
+				oRequest.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
+				IRestResponse oResponse = oClient.Execute( oRequest );
 			}
-			catch ( Exception ex )
+			catch ( Exception oException )
 			{
-				Console.WriteLine( "Error: " + ex.Message ); 
+				Console.WriteLine( "Error: " + oException.Message ); 
 			}
 		}
 
-		public void TurnOff( string AccessToken )
+		public void TurnOff( string sAccessToken )
 		{
-			string url = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/3";
+			string sUrl = "https://my.oort.in/rest-service/v1/devices/" + DevID + "/panels/boolean/3";
 
 			try
 			{
-				var client = new RestClient( url );
-				var request = new RestRequest( Method.POST );
-				request.AddHeader( "authorization", "Bearer " + AccessToken );
-				request.AddHeader( "content-type", "application/json" );
-				request.AddParameter( "application/json", "{\"state\": \"OFF\"}", ParameterType.RequestBody );
-				IRestResponse response = client.Execute( request );
+				var oClient = new RestClient( sUrl );
+				var oRequest = new RestRequest( Method.POST );
+				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
+				oRequest.AddHeader( "content-type", "application/json" );
+				oRequest.AddParameter( "application/json", "{\"state\": \"OFF\"}", ParameterType.RequestBody );
+				IRestResponse oResponse = oClient.Execute( oRequest );
 			}
-			catch ( Exception ex )
+			catch ( Exception oException )
 			{
-				Console.WriteLine( "Error: " + ex.Message ); 
+				Console.WriteLine( "Error: " + oException.Message ); 
 			}
 		}
-    }
-
-    public class Beacon : Device
-    {
-
     }
 
     public class Group

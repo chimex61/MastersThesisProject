@@ -9,87 +9,87 @@ namespace LibServ
 {
     public class Microphone
     {
-        NAudio.Wave.WaveIn sourceStream = null;
-        NAudio.Wave.DirectSoundOut waveOut = null;
-        NAudio.Wave.WaveFileWriter waveWriter = null;
-        int deviceNumber = 0;
-        string fileName = "..//..//..//..//wav//record.wav";
+        NAudio.Wave.WaveIn m_oSourceStream = null;
+        NAudio.Wave.DirectSoundOut m_oWaveOut = null;
+        NAudio.Wave.WaveFileWriter m_oWaveWriter = null;
+        int m_iDeviceNumber = 0;
+        string m_sFileName = "..//..//..//..//wav//record.wav";
 
         public void ListDevices()
         {
-            List<NAudio.Wave.WaveInCapabilities> sources = new List<NAudio.Wave.WaveInCapabilities>();
+            List<NAudio.Wave.WaveInCapabilities> oSources = new List<NAudio.Wave.WaveInCapabilities>();
 
-            for (int i = 0; i < NAudio.Wave.WaveIn.DeviceCount; i++)
+            for ( int iIterator = 0; iIterator < NAudio.Wave.WaveIn.DeviceCount; iIterator++ )
             {
-                sources.Add(NAudio.Wave.WaveIn.GetCapabilities(i));
+                oSources.Add( NAudio.Wave.WaveIn.GetCapabilities( iIterator ));
             }
         }
 
         public void RecordAndPlay()
         {
-            sourceStream = new NAudio.Wave.WaveIn();
-            sourceStream.DeviceNumber = deviceNumber;
-            sourceStream.WaveFormat = new NAudio.Wave.WaveFormat(44100, NAudio.Wave.WaveIn.GetCapabilities(deviceNumber).Channels);
+            m_oSourceStream = new NAudio.Wave.WaveIn();
+            m_oSourceStream.DeviceNumber = m_iDeviceNumber;
+            m_oSourceStream.WaveFormat = new NAudio.Wave.WaveFormat( 44100, NAudio.Wave.WaveIn.GetCapabilities( m_iDeviceNumber ).Channels );
 
-            NAudio.Wave.WaveInProvider waveIn = new NAudio.Wave.WaveInProvider(sourceStream);
+            NAudio.Wave.WaveInProvider oWaveIn = new NAudio.Wave.WaveInProvider( m_oSourceStream );
 
-            waveOut = new NAudio.Wave.DirectSoundOut();
-            waveOut.Init(waveIn);
+            m_oWaveOut = new NAudio.Wave.DirectSoundOut();
+            m_oWaveOut.Init( oWaveIn );
 
-            sourceStream.StartRecording();
-            waveOut.Play();
+            m_oSourceStream.StartRecording();
+            m_oWaveOut.Play();
         }
 
         public void StopRecording()
         {
-            if (waveOut != null)
+            if ( m_oWaveOut != null )
             {
-                waveOut.Stop();
-                waveOut.Dispose();
-                waveOut = null;
+                m_oWaveOut.Stop();
+                m_oWaveOut.Dispose();
+                m_oWaveOut = null;
             }
-            if (sourceStream != null)
+            if ( m_oSourceStream != null )
             {
-                sourceStream.StopRecording();
-                sourceStream.Dispose();
-                sourceStream = null;
+                m_oSourceStream.StopRecording();
+                m_oSourceStream.Dispose();
+                m_oSourceStream = null;
             }
-            if (waveWriter != null)
+            if ( m_oWaveWriter != null )
             {
-                waveWriter.Dispose();
-                waveWriter = null;
+                m_oWaveWriter.Dispose();
+                m_oWaveWriter = null;
             }
         }
 
         public void RecordAndSaveWin()
         {
-            sourceStream = new NAudio.Wave.WaveIn();
-            sourceStream.DeviceNumber = deviceNumber;
-            sourceStream.WaveFormat = new NAudio.Wave.WaveFormat(44100, NAudio.Wave.WaveIn.GetCapabilities(deviceNumber).Channels);
+            m_oSourceStream = new NAudio.Wave.WaveIn();
+            m_oSourceStream.DeviceNumber = m_iDeviceNumber;
+            m_oSourceStream.WaveFormat = new NAudio.Wave.WaveFormat( 44100, NAudio.Wave.WaveIn.GetCapabilities( m_iDeviceNumber ).Channels );
 
-            sourceStream.DataAvailable += new EventHandler<NAudio.Wave.WaveInEventArgs>(sourceStream_DataAvailable);
-            waveWriter = new NAudio.Wave.WaveFileWriter(fileName, sourceStream.WaveFormat);
+            m_oSourceStream.DataAvailable += new EventHandler<NAudio.Wave.WaveInEventArgs>( SourceStreamDataAvailableEvent );
+            m_oWaveWriter = new NAudio.Wave.WaveFileWriter( m_sFileName, m_oSourceStream.WaveFormat );
 
-            sourceStream.StartRecording();
+            m_oSourceStream.StartRecording();
         }
 
-        private void sourceStream_DataAvailable(object sender, NAudio.Wave.WaveInEventArgs e)
+        private void SourceStreamDataAvailableEvent( object sender, NAudio.Wave.WaveInEventArgs e )
         {
-            if (waveWriter == null) return;
+            if ( m_oWaveWriter == null ) return;
 
-            waveWriter.Write(e.Buffer, 0, e.BytesRecorded);
-            waveWriter.Flush();
+            m_oWaveWriter.Write( e.Buffer, 0, e.BytesRecorded );
+            m_oWaveWriter.Flush();
         }
 
         public byte[] ProcessSpeech()
         {
-            FileStream fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
-            BinaryReader fileReader = new BinaryReader(fileStream);
-            byte[] BA_AudioFile = fileReader.ReadBytes((Int32)fileStream.Length);
-            fileStream.Close();
-            fileReader.Close();
+            FileStream oFileStream = new FileStream( m_sFileName, FileMode.Open, FileAccess.Read );
+            BinaryReader oFileReader = new BinaryReader( oFileStream );
+            byte[] baAudioFile = oFileReader.ReadBytes(( Int32 )oFileStream.Length );
+            oFileStream.Close();
+            oFileReader.Close();
 
-            return BA_AudioFile;
+            return baAudioFile;
         }
     }
 }

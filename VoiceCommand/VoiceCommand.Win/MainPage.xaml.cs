@@ -13,35 +13,55 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using LibServ;
+using System.Timers;
 
 namespace VoiceCommand.Win
 {
-    /// <summary>
-    /// Interaction logic for MainPage.xaml
-    /// </summary>
     public partial class MainPage : Page
     {
+        Microphone m_oMic = new Microphone();
+        WitAiServ m_oWit = new WitAiServ();
+
+        bool m_bRecording = false;
+
         public MainPage()
         {
             InitializeComponent();
         }
 
-        Microphone mic = new Microphone();
-        WitAiServ wit = new WitAiServ();
-
-        // on wit.ai button clicked
-        private void OnRecord( object sender, RoutedEventArgs e )
+        private async void OnWitAiButtonClicked(object sender, RoutedEventArgs e)
         {
-            mic.ListDevices();
-            mic.RecordAndSaveWin();
-            //mic.RecordAndPlay();
+            if (!m_bRecording)
+            {
+                m_bRecording = true;
+                WitAiActive();
+            }
+            else
+            {
+                m_bRecording = false;
+                await WitAiInactive();
+            }
         }
 
-        private async void OnStop( object sender, RoutedEventArgs e )
+        private void WitAiActive()
         {
-            mic.StopRecording();
-            byte[] audioFile = mic.ProcessSpeech();
-            await wit.SendItem( audioFile );
+            DLButton.IsEnabled = false;
+            WitAiButton.Content = "Stop";
+            m_oMic.ListDevices();
+            m_oMic.RecordAndSaveWin();
+        }
+
+        private async Task WitAiInactive()
+        {
+            DLButton.IsEnabled = true;
+            WitAiButton.Content = "Wit.ai";
+            m_oMic.StopRecording();
+            byte[] baAudioFile = m_oMic.ProcessSpeech();
+            await m_oWit.SendItem( baAudioFile );
+        }
+
+        private async void OnDLButtonClicked(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

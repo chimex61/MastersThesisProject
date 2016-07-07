@@ -19,7 +19,7 @@ namespace VoiceCommand.Win
 {
     public partial class MainWindow : Window
     {
-        private Account oAccount;
+        private Account m_oAccount;
 
         public MainWindow()
         {
@@ -28,36 +28,34 @@ namespace VoiceCommand.Win
 
         bool CanLogIn()
         {
-            bool isPass = false;
-            bool isLogin = false;
+            bool bPassword = false;
+            bool bLogin = false;
 
-            if (!string.IsNullOrWhiteSpace(USER_LOGIN.Text))
+            if ( !string.IsNullOrWhiteSpace(USER_LOGIN.Text) )
             {
-                isLogin = true;
+                bLogin = true;
             }
 
             if (!string.IsNullOrWhiteSpace(USER_PASSWORD.Password))
             {
-                isPass = true;
+                bPassword = true;
             }
 
-            return isPass & isLogin;
+            return bPassword & bLogin;
         }
 
         private async void OnLogin( object sender, RoutedEventArgs e )
         {
-            bool log = CanLogIn();
-
-            if (log)
+            if ( CanLogIn() )
             {
                 LOGIN_INFO.Content = "Logging ...";
                 progressIndicator.Visibility = System.Windows.Visibility.Visible;
 
-                oAccount = new Account( USER_LOGIN.Text, USER_PASSWORD.Password );
-                OortServ oServ = new OortServ( oAccount );
+                m_oAccount = new Account( USER_LOGIN.Text, USER_PASSWORD.Password );
+                OortServ oServ = new OortServ( m_oAccount );
                 await oServ.GetToken();
 
-                if (oServ.oAcc.Token != null)
+                if ( oServ.Account.Token != null )
                 {
                     LOGIN_INFO.Content = "Logged";
                     progressIndicator.Visibility = System.Windows.Visibility.Hidden;
