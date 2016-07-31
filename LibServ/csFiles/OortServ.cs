@@ -121,5 +121,38 @@ namespace LibServ
                 Console.WriteLine( "Error: " + oException.Message );
             }
         }
+
+        // WARNING: HARDCODE
+        public /*async Task*/ void MakeAction( ResponseContent oContent )
+        {
+            switch( oContent.Location)
+            {
+                case "kitchen":
+                    // LED1 lub socket
+                    break;
+                case "living room":
+                    // wiadomo od razu, że żarówka (LED2)
+                    var LED2 = new SmartLED2();
+                    LED2.DevID = "dfc57b6a-0991-40aa-89e6-3ee598f7cb08";
+
+                    switch( oContent.Action )
+                    {
+                        case "on":
+                            LED2.TurnOn( Account.Token );
+                            break;
+                        case "off":
+                            LED2.TurnOff( Account.Token );
+                            break;
+                        default:
+                            break;
+                    }
+
+
+                    break;
+                default:
+                    break;
+            }
+                
+        }
     }
 }

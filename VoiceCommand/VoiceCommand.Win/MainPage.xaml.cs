@@ -21,12 +21,14 @@ namespace VoiceCommand.Win
     {
         Microphone m_oMic = new Microphone();
         WitAiServ m_oWit = new WitAiServ();
+        OortServ m_oOort;
 
         bool m_bRecording = false;
 
-        public MainPage()
+        public MainPage( OortServ oOort )
         {
             InitializeComponent();
+            m_oOort = oOort;
         }
 
         private async void OnWitAiButtonClicked(object sender, RoutedEventArgs e)
@@ -57,7 +59,17 @@ namespace VoiceCommand.Win
             WitAiButton.Content = "Wit.ai";
             m_oMic.StopRecording();
             byte[] baAudioFile = m_oMic.ProcessSpeech();
-            await m_oWit.SendItem( baAudioFile );
+            var oResponseStruct = /*await*/ m_oWit.ExecuteItem(baAudioFile);
+            /*
+             * Zwracać strukturkę trzyelementową: location, device, action
+             * po deserializacji i przekazywać ją do funkcji 'wybierającej'
+             * odpowiednią klasę i funkcję (hardcode)
+             * jej zadaniem będzie wysłanie odpowiedniej komendy na server
+             * Oort.
+             */
+            //Task.WaitAny();
+            Task.WaitAll();
+            m_oOort.MakeAction( oResponseStruct );
         }
 
         private async void OnDLButtonClicked(object sender, RoutedEventArgs e)

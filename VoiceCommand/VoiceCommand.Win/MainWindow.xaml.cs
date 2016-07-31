@@ -63,7 +63,7 @@ namespace VoiceCommand.Win
                     oServ.GetAccess();
                     //oServ.GetDevices();
                     HideComponents();
-                    _NavigationFrame.Navigate( new MainPage() );
+                    _NavigationFrame.Navigate( new MainPage( oServ ));
                 }
                 else
                 {
