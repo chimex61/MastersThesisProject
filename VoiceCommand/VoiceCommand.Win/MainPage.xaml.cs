@@ -22,6 +22,7 @@ namespace VoiceCommand.Win
         Microphone m_oMic = new Microphone();
         WitAiServ m_oWit = new WitAiServ();
         OortServ m_oOort;
+        IbmBlueMixServ m_oIbm = new IbmBlueMixServ();
 
         bool m_bRecording = false;
 
@@ -59,7 +60,7 @@ namespace VoiceCommand.Win
             WitAiButton.Content = "Wit.ai";
             m_oMic.StopRecording();
             byte[] baAudioFile = m_oMic.ProcessSpeech();
-            var oResponseStruct = /*await*/ m_oWit.ExecuteItem(baAudioFile);
+            //var oResponseStruct = /*await*/ m_oWit.ExecuteItem(baAudioFile);
             /*
              * Zwracać strukturkę trzyelementową: location, device, action
              * po deserializacji i przekazywać ją do funkcji 'wybierającej'
@@ -69,11 +70,14 @@ namespace VoiceCommand.Win
              */
             //Task.WaitAny();
             Task.WaitAll();
-            m_oOort.MakeAction( oResponseStruct );
+            //m_oOort.MakeAction( oResponseStruct );
+            var ResponseStruct = m_oIbm.ExecuteItem(baAudioFile);
+
         }
 
         private async void OnDLButtonClicked(object sender, RoutedEventArgs e)
         {
+
         }
     }
 }
