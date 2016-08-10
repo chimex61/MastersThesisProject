@@ -16,7 +16,8 @@ namespace LibServ
 {
     public class IbmBlueMixServ
     {
-        private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api";
+        //private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api";
+        private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?timestamps=true&word_alternatives_threshold=0.9&continuous=true";
 
         public /*async Task<ResponseContent>*/ ResponseContent ExecuteItem(byte[] ba_file)
         {
