@@ -32,9 +32,9 @@ namespace VoiceCommand.Win
             m_oOort = oOort;
         }
 
-        private async void OnWitAiButtonClicked(object sender, RoutedEventArgs e)
+        private async void OnWitAiButtonClicked( object sender, RoutedEventArgs e )
         {
-            if (!m_bRecording)
+            if ( !m_bRecording )
             {
                 m_bRecording = true;
                 WitAiActive();
@@ -60,24 +60,46 @@ namespace VoiceCommand.Win
             WitAiButton.Content = "Wit.ai";
             m_oMic.StopRecording();
             byte[] baAudioFile = m_oMic.ProcessSpeech();
-            //var oResponseStruct = /*await*/ m_oWit.ExecuteItem(baAudioFile);
-            /*
-             * Zwracać strukturkę trzyelementową: location, device, action
-             * po deserializacji i przekazywać ją do funkcji 'wybierającej'
-             * odpowiednią klasę i funkcję (hardcode)
-             * jej zadaniem będzie wysłanie odpowiedniej komendy na server
-             * Oort.
-             */
-            //Task.WaitAny();
+            var oResponseStruct = /*await*/ m_oWit.ExecuteItem(baAudioFile);
+
             Task.WaitAll();
-            //m_oOort.MakeAction( oResponseStruct );
-            var ResponseStruct = m_oIbm.ExecuteItem(baAudioFile);
+            m_oOort.MakeAction( oResponseStruct );
 
         }
 
-        private async void OnDLButtonClicked(object sender, RoutedEventArgs e)
+        private async void OnDLButtonClicked( object sender, RoutedEventArgs e )
         {
+            if (!m_bRecording)
+            {
+                m_bRecording = true;
+                IbmActive();
+            }
+            else
+            {
+                m_bRecording = false;
+                await IbmInactive();
+            }
+        }
 
+        private void IbmActive()
+        {
+            WitAiButton.IsEnabled = false;
+            DLButton.Content = "Stop";
+            m_oMic.ListDevices();
+            m_oMic.RecordAndSaveWin();
+        }
+
+        private async Task IbmInactive()
+        {
+            WitAiButton.IsEnabled = true;
+            DLButton.Content = "IBM Watson";
+            m_oMic.StopRecording();
+            byte[] baAudioFile = m_oMic.ProcessSpeech();
+            var ResponseStruct = m_oIbm.ExecuteItem(baAudioFile);
+
+            Task.WaitAll();
+            //m_oIbm.MakeAction( oResponseStruct );
+           
         }
     }
 }

@@ -16,8 +16,7 @@ namespace LibServ
 {
     public class IbmBlueMixServ
     {
-        //private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api";
-        private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?timestamps=true&word_alternatives_threshold=0.9&continuous=true";
+        private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize";
 
         public /*async Task<ResponseContent>*/ ResponseContent ExecuteItem(byte[] ba_file)
         {
@@ -25,25 +24,25 @@ namespace LibServ
 
             try
             {
-                var oClient = new RestClient(m_sIbmSpeechUrl);
-                var oRequest = new RestRequest(Method.POST);
-                oClient.Authenticator = new HttpBasicAuthenticator("log", "pass");
-                oRequest.AddHeader("--data-binary", "@record.wav");
-                oRequest.AddHeader("content-type", "audio/wav");
-                oRequest.AddParameter("audio/wav", ba_file, ParameterType.RequestBody);
+                var oClient = new RestClient( m_sIbmSpeechUrl );
+                var oRequest = new RestRequest( Method.POST );
+                oClient.Authenticator = new HttpBasicAuthenticator( "krzysztof.sommerrey@gmail.com", "oort2015" );
+                oRequest.AddHeader( "--data-binary", "@record.wav" );
+                oRequest.AddHeader( "content-type", "audio/wav" );
+                oRequest.AddParameter( "audio/wav", ba_file, ParameterType.RequestBody );
 
                 //                 oClient.ExecuteAsync( oRequest, oResponse =>
                 //                 {
                 //                     //Console.WriteLine( oResponse.Content );
                 //                     oResponseStruct = Deserialize( oResponse );
                 //                 });
-                var oResponse = oClient.Execute(oRequest);
-                Console.WriteLine(oResponse.Content);
+                var oResponse = oClient.Execute( oRequest );
+                Console.WriteLine( oResponse.Content );
                // oResponseStruct = Deserialize(oResponse);
             }
-            catch (Exception oException)
+            catch ( Exception oException )
             {
-                Console.WriteLine("Error: " + oException.Message);
+                Console.WriteLine( "Error: " + oException.Message );
             }
 
             return oResponseStruct;

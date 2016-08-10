@@ -20,7 +20,7 @@
         </Grid.RowDefinitions>
 
         <Button Name="WitAiButton" Content="Wit.ai" IsEnabled="true" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Height="29" Padding="0" BorderThickness="0" Background="#FF3E3E3E" FontWeight="Bold" Foreground="#FFE6E6E6" Click="OnWitAiButtonClicked" Grid.Row="1"/>
-        <Button Name="DLButton" Content="Deep Learning" IsEnabled="true" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Height="29" Padding="0" BorderThickness="0" Background="#FF3E3E3E" FontWeight="Bold" Foreground="#FFE6E6E6" Click="OnDLButtonClicked" Grid.Row="2"/>
+        <Button Name="DLButton" Content="IBM Watson" IsEnabled="true" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Height="29" Padding="0" BorderThickness="0" Background="#FF3E3E3E" FontWeight="Bold" Foreground="#FFE6E6E6" Click="OnDLButtonClicked" Grid.Row="2"/>
 
       </Grid>
 </Page>
