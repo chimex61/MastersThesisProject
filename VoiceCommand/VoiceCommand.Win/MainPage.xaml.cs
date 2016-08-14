@@ -94,9 +94,9 @@ namespace VoiceCommand.Win
             WitAiButton.IsEnabled = true;
             DLButton.Content = "IBM Watson";
             m_oMic.StopRecording();
-           // byte[] baAudioFile = m_oMic.ProcessSpeech();
-            //var ResponseStruct = m_oIbm.ExecuteItem(baAudioFile);
-            m_oIbm.ExecuteItem();
+            byte[] baAudioFile = m_oMic.ProcessSpeech();
+            var ResponseStruct = m_oIbm.ExecuteItem( baAudioFile );
+            //m_oIbm.ExecuteItem();
 
             Task.WaitAll();
             //m_oIbm.MakeAction( oResponseStruct );

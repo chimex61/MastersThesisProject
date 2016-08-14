@@ -16,10 +16,8 @@ namespace LibServ
 {
     public class IbmBlueMixServ
     {
-
-        //public /*async Task<ResponseContent>*/ ResponseContent ExecuteItem(byte[] ba_file)
-        
-        public  void ExecuteItem( )
+       
+        public void ExecuteItem( )
         {
             try
             {
@@ -76,44 +74,22 @@ namespace LibServ
 
 
 
+        private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize";     
 
-        /*
-        //private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize";     
-        private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api"; 
-        //private string m_sIbmSpeechUrl = "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?timestamps=true&word_alternatives_threshold=0.9&continuous=true";
-        private string m_sResourceUrl = "https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?timestamps=true&word_alternatives_threshold=0.9&continuous=true";
-
-        public  ResponseContent ExecuteItem(byte[] ba_file)
+        public ResponseContent ExecuteItem( byte[] ba_file )
         {
             var oResponseStruct = new ResponseContent();
 
             try
             {
                 var oClient = new RestClient( m_sIbmSpeechUrl );
-                //oClient.Authenticator = new HttpBasicAuthenticator( "krzysztof.sommerrey@gmail.com", "oort2015" );
-                oClient.Authenticator = new HttpBasicAuthenticator("bbac0b5a-58c3-42e5-b21c-53b848b3d287", "VqKg1YBaWod5");
-                var oRequest = new RestRequest("v1/recognize?timestamps=true&word_alternatives_threshold=0.9&continuous=true", Method.POST);
-                //oRequest.Resource = m_sResourceUrl;
-                //oRequest.AddHeader( "--data-binary", "@record.wav" );
-
-                var data = File.ReadAllBytes("C:/Users/Tomek/Desktop/konwerter/probka1.wav");
-                oRequest.AddHeader("Content-Type", "audio/wav");
-                
-                //oRequest.AddHeader("--data-binary", "C:/Users/Tomek/Documents/Github/MastersThesisProject/wav/record.wav");
-                //oRequest.AddParameter( "audio/wav", ba_file, ParameterType.RequestBody );
-
-                //oRequest.AddParameter("--data-binary", data, ParameterType.RequestBody);
-
-               oRequest.AddFile("probka1.wav", data, "probka1.wav", "audio/wav");
-
-                //                 oClient.ExecuteAsync( oRequest, oResponse =>
-                //                 {
-                //                     //Console.WriteLine( oResponse.Content );
-                //                     oResponseStruct = Deserialize( oResponse );
-                //                 });
+                oClient.Authenticator = new HttpBasicAuthenticator( "bbac0b5a-58c3-42e5-b21c-53b848b3d287", "VqKg1YBaWod5" );
+                var oRequest = new RestRequest( Method.POST );
+                oRequest.AddHeader( "--data-binary", "@record.wav" );
+                oRequest.AddHeader( "content-type", "audio/wav" );
+                oRequest.AddParameter( "audio/wav", ba_file, ParameterType.RequestBody );
 
                 var oResponse = oClient.Execute( oRequest );
-                //IRestResponse  oResponse = oClient.Execute(oRequest);
                 Console.WriteLine( oResponse.Content );
                // oResponseStruct = Deserialize(oResponse);
             }
@@ -123,9 +99,6 @@ namespace LibServ
             }
 
             return oResponseStruct;
-        }*/
-
-
-    
+        }
     }
 }
