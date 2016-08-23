@@ -111,10 +111,6 @@ namespace LibServ
                     Console.WriteLine( oResponse.Content );
                 });
 
-                /*
-                 * Trzeba przeszukać json'a i odnaleźć ID poszczególnych urządzeń.
-                 * ID jest potrzebne, żeby później odwoływać się do określonego urządzenia i nim zarządzać.
-                 */
             }
             catch ( Exception oException )
             {
@@ -125,31 +121,69 @@ namespace LibServ
         // WARNING: HARDCODE
         public /*async Task*/ void MakeAction( ResponseContent oContent )
         {
-            switch( oContent.Location)
+            switch( oContent.Location )
             {
                 case "kitchen":
-                    // LED1 lub socket
+                    // LED1 or SmartSocket
+                    switch( oContent.Device )
+                    {
+                        case "light":
+                            // LED1
+                            var oLED1 = new SmartLED();
+                            oLED1.DevID = "e95ff60e-bf28-4456-91d5-d8775a581ac9";
+                            switch ( oContent.Action )
+                            {
+                                case "on":
+                                    oLED1.TurnOn( Account.Token );
+                                    break;
+                                case "off":
+                                    oLED1.TurnOff( Account.Token );
+                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
+                        case "socket":
+                            var oSocket = new SmartSocket();
+                            oSocket.DevID = "a4009f2b-0014-4383-a34e-0d4192e4f139";
+                            switch( oContent.Action )
+                            {
+                                case "on":
+                                    oSocket.TurnOn( Account.Token );
+                                    break;
+                                case "off":
+                                    oSocket.TurnOff( Account.Token );
+                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
+                    }
                     break;
                 case "living room":
-                    // wiadomo od razu, że żarówka (LED2)
-                    var LED2 = new SmartLED2();
-                    LED2.DevID = "dfc57b6a-0991-40aa-89e6-3ee598f7cb08";
-
+                    // only LED2
+                    var oLED2 = new SmartLED2();
+                    oLED2.DevID = "dfc57b6a-0991-40aa-89e6-3ee598f7cb08";
                     switch( oContent.Action )
                     {
                         case "on":
-                            LED2.TurnOn( Account.Token );
+                            oLED2.TurnOn( Account.Token );
                             break;
                         case "off":
-                            LED2.TurnOff( Account.Token );
+                            oLED2.TurnOff( Account.Token );
                             break;
                         default:
                             break;
                     }
-
-
                     break;
                 default:
+                    if( oContent.Device == "finder" &&
+                        oContent.Action == "on" )
+                    {
+                        var oFinder = new SmartFinder();
+                        oFinder.DevID = "59e30ea0-d491-4d4e-9044-c58f4ccb1e05";
+                        oFinder.TurnOn( Account.Token );
+                    }
                     break;
             }
                 
