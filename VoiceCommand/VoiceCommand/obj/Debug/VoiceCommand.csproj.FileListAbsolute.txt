@@ -62,3 +62,7 @@ C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\o
 C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\LoginPage.xaml.g.cs
 C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\VoiceCommand.dll
 C:\Users\Tomek\Documents\Github\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\VoiceCommand.pdb
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\VoiceCommand.csproj.App.config
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\VoiceCommand.csprojResolveAssemblyReference.cache
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\MainPage.xaml.g.cs
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\LoginPage.xaml.g.cs

@@ -46,7 +46,7 @@ namespace VoiceCommand
                 OortServ oServ = new OortServ( oAccount );
                 await oServ.GetToken();
 
-                if ( oServ.oAcc.Token != null )
+                if ( oServ.m_Account.Token != null )
                 {
                     //loginInfo.Text = "Yours access token: " + oServ.oAcc.Token;
                     loginInfo.Text = "Logged";
