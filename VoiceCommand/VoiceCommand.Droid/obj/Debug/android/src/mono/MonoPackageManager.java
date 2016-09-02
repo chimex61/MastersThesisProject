@@ -136,7 +136,10 @@ class MonoPackageManager_Resources {
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
 		"System.ServiceModel.Internals.dll",
+		"RestSharp.Portable.HttpClient.dll",
+		"RestSharp.Portable.Core.dll",
 		"Newtonsoft.Json.dll",
+		"System.Net.Http.Primitives.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
