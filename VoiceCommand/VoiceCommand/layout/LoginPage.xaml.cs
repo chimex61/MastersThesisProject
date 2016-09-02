@@ -51,7 +51,7 @@ namespace VoiceCommand
                     //loginInfo.Text = "Yours access token: " + oServ.oAcc.Token;
                     loginInfo.Text = "Logged";
 
-                    await Navigation.PushModalAsync( new VoiceCommand.MainPage() );
+                    await Navigation.PushModalAsync( new VoiceCommand.MainPage( oServ ) );
 
                     loginInfo.IsVisible = false;
                     progressIndicator.IsVisible = false;

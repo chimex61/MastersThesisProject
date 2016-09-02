@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LibServ
+namespace VoiceCommand
 {
     // generated via Json2csharp.com
     public class Accessory

@@ -57,3 +57,5 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\uploadflags.txt
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll.mdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll.mdb
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.csprojResolveAssemblyReference.cache
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll

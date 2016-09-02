@@ -4,7 +4,7 @@ using RestSharp.Portable;
 using RestSharp.Portable.HttpClient;
 using System.Threading.Tasks;
 
-namespace LibServ
+namespace VoiceCommand
 {
     public class WitAiServ
     {

@@ -3,7 +3,7 @@ using RestSharp.Portable;
 using RestSharp.Portable.Authenticators;
 using RestSharp.Portable.HttpClient;
 
-namespace LibServ
+namespace VoiceCommand
 {
     public class IbmBlueMixServ
     {

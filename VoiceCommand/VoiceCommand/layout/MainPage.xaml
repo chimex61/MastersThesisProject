@@ -25,8 +25,8 @@ x:Class="VoiceCommand.MainPage">
 
         <Label Text="Choose service and speak!" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0"/>
 
-        <Button x:Name="WitAiButton" Text="Wit.ai" IsEnabled="true" Grid.Row="1"/>
-        <Button x:Name="DLButton" Text="Deep Learning" IsEnabled="true" Grid.Row="2"/>
+        <Button x:Name="WitAiButton" Text="Wit.ai" IsEnabled="true" Grid.Row="1" Clicked="OnWitAiButtonClicked"/>
+        <Button x:Name="DLButton" Text="IBM Watson" IsEnabled="true" Grid.Row="2" Clicked="OnDLButtonClicked"/>
 
       </Grid>
     </StackLayout>
