@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-using System.Net.Http;
-using System.Net;
-using System.IO;
-using RestSharp;
 using RestSharp.Portable;
-using System.Collections.Specialized;
+using RestSharp.Portable.Authenticators;
+using RestSharp.Portable.HttpClient;
 
 namespace LibServ
 {

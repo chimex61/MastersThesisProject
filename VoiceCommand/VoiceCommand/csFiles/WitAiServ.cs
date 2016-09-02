@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-using System.Net.Http;
-using System.Net;
-using System.IO;
-using RestSharp;
 using RestSharp.Portable.Deserializers;
 using RestSharp.Portable;
-using System.Collections.Specialized;
+using RestSharp.Portable.HttpClient;
+using System.Threading.Tasks;
 
 namespace LibServ
 {
@@ -31,12 +23,7 @@ namespace LibServ
                 oRequest.AddHeader( "content-type", "audio/wav" );
                 oRequest.AddHeader("authorization", "Bearer " + m_sAccessToken );
                 oRequest.AddParameter( "audio/wav", ba_file, ParameterType.RequestBody );
- 
-//                 oClient.ExecuteAsync( oRequest, oResponse =>
-//                 {
-//                     //Console.WriteLine( oResponse.Content );
-//                     oResponseStruct = Deserialize( oResponse );
-//                 });
+
                 var oResponse = oClient.Execute(oRequest);
                 oResponseStruct = Deserialize(oResponse);
             }
@@ -48,7 +35,7 @@ namespace LibServ
             return oResponseStruct;
         }
 
-        public ResponseContent Deserialize(IRestResponse oResponse)
+        public ResponseContent Deserialize(Task<IRestResponse> oResponse)
         {
             var oResponseStruct = new ResponseContent();
             var oDeserializer = new JsonDeserializer();
@@ -56,13 +43,10 @@ namespace LibServ
 
             try
             {
-                oDeserializedResponse = oDeserializer.Deserialize<RootObject>( oResponse );
+                oDeserializedResponse = oDeserializer.Deserialize<RootObject>( (IRestResponse)oResponse );
                 oResponseStruct.Device = oDeserializedResponse.entities.device[0].value;
                 oResponseStruct.Location = oDeserializedResponse.entities.location[0].value;
                 oResponseStruct.Action = oDeserializedResponse.entities.on_off[0].value;
-//                 Console.WriteLine( oDeserializedResponse.entities.device[0].value );
-//                 Console.WriteLine( oDeserializedResponse.entities.location[0].value );
-//                 Console.WriteLine( oDeserializedResponse.entities.on_off[0].value );
             }
             catch( Exception oException )
             {

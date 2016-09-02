@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using RestSharp.Portable;
-using RestSharp;
+using RestSharp.Portable.HttpClient;
 
 namespace VoiceCommand
 {
@@ -58,7 +58,7 @@ namespace VoiceCommand
                 oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
                 oRequest.AddHeader( "content-type", "application/json" );
                 oRequest.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
-                IRestResponse oResponse = oClient.Execute( oRequest );
+                oClient.Execute( oRequest );
             }
             catch ( Exception oException )
             {
@@ -77,7 +77,7 @@ namespace VoiceCommand
                 oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
                 oRequest.AddHeader( "content-type", "application/json" );
                 oRequest.AddParameter( "application/json", "{\"state\": \"OFF\"}", ParameterType.RequestBody );
-                IRestResponse oResponse = oClient.Execute( oRequest );
+                oClient.Execute( oRequest );
             }
             catch ( Exception oException )
             {
@@ -96,7 +96,7 @@ namespace VoiceCommand
                 oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
                 oRequest.AddHeader( "content-type", "application/json" );
                 oRequest.AddParameter( "application/json", "{\"value\": \"" + sValue + "\"}", ParameterType.RequestBody );
-                IRestResponse oResponse = oClient.Execute( oRequest );
+                oClient.Execute( oRequest );
             }
             catch ( Exception oException )
             {
@@ -115,7 +115,7 @@ namespace VoiceCommand
                 oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
                 oRequest.AddHeader( "content-type", "application/json" );
                 oRequest.AddParameter( "application/json", "{\"rgb\": \"" + sValue + "\"}", ParameterType.RequestBody );
-                IRestResponse oResponse = oClient.Execute( oRequest );
+                oClient.Execute( oRequest );
             }
             catch ( Exception oException )
             {
@@ -150,7 +150,7 @@ namespace VoiceCommand
 				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
 				oRequest.AddHeader( "content-type", "application/json" );
 				oRequest.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
-				IRestResponse oResponse = oClient.Execute( oRequest );
+				oClient.Execute( oRequest );
 			}
 			catch ( Exception oException )
 			{
@@ -169,7 +169,7 @@ namespace VoiceCommand
 				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
 				oRequest.AddHeader( "content-type", "application/json" );
 				oRequest.AddParameter( "application/json", "{\"state\": \"OFF\"}", ParameterType.RequestBody );
-				IRestResponse oResponse = oClient.Execute( oRequest );
+				oClient.Execute( oRequest );
 			}
 			catch ( Exception oException )
 			{
@@ -188,7 +188,7 @@ namespace VoiceCommand
 				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
 				oRequest.AddHeader( "content-type", "application/json" );
 				oRequest.AddParameter( "application/json", "{\"value\": \"" + sValue + "\"}", ParameterType.RequestBody );
-				IRestResponse oResponse = oClient.Execute( oRequest );
+				oClient.Execute( oRequest );
 			}
 			catch ( Exception oException )
 			{
@@ -207,7 +207,7 @@ namespace VoiceCommand
 				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
 				oRequest.AddHeader( "content-type", "application/json" );
 				oRequest.AddParameter( "application/json", "{\"rgb\": \"" + sValue + "\"}", ParameterType.RequestBody );
-				IRestResponse oResponse = oClient.Execute( oRequest );
+				oClient.Execute( oRequest );
 			}
 			catch ( Exception oException )
 			{
@@ -226,7 +226,7 @@ namespace VoiceCommand
 				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
 				oRequest.AddHeader( "content-type", "application/json" );
 				oRequest.AddParameter( "application/json", "{\"value\": \"" + sValue + "\"}", ParameterType.RequestBody );
-				IRestResponse oResponse = oClient.Execute( oRequest );
+				oClient.Execute( oRequest );
 			}
 			catch ( Exception oException )
 			{
@@ -251,7 +251,7 @@ namespace VoiceCommand
                 oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
                 oRequest.AddHeader( "content-type", "application/json" );
                 oRequest.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
-                IRestResponse oResponse = oClient.Execute( oRequest );
+                oClient.Execute( oRequest );
             }
             catch ( Exception oException )
             {
@@ -276,7 +276,7 @@ namespace VoiceCommand
 				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
 				oRequest.AddHeader( "content-type", "application/json" );
 				oRequest.AddParameter( "application/json", "{\"state\": \"ON\"}", ParameterType.RequestBody );
-				IRestResponse oResponse = oClient.Execute( oRequest );
+				oClient.Execute( oRequest );
 			}
 			catch ( Exception oException )
 			{
@@ -295,7 +295,7 @@ namespace VoiceCommand
 				oRequest.AddHeader( "authorization", "Bearer " + sAccessToken );
 				oRequest.AddHeader( "content-type", "application/json" );
 				oRequest.AddParameter( "application/json", "{\"state\": \"OFF\"}", ParameterType.RequestBody );
-				IRestResponse oResponse = oClient.Execute( oRequest );
+				oClient.Execute( oRequest );
 			}
 			catch ( Exception oException )
 			{
