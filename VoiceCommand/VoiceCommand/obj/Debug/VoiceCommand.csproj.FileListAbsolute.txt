@@ -89,5 +89,3 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\Voice
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\VoiceCommand.pdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\VoiceCommand.dll.mdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Debug\VoiceCommand.dll.mdb
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand\obj\Debug\VoiceCommand.dll.mdb
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand\bin\Debug\VoiceCommand.dll.mdb

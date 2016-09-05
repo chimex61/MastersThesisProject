@@ -46,6 +46,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="csFiles\OortServ.cs" />
+    <Compile Include="csFiles\Microphone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="csFiles\WitAiResponse.cs" />
   </ItemGroup>

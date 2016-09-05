@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-
+using VoiceCommand.Interfaces;
 using Xamarin.Forms;
 
 namespace VoiceCommand
@@ -13,7 +10,7 @@ namespace VoiceCommand
         WitAiServ m_oWit = new WitAiServ();
         OortServ m_oOort;
         IbmBlueMixServ m_oIbm = new IbmBlueMixServ();
-
+        
         bool m_bRecording = false;
 
         public MainPage( OortServ oServ)
@@ -37,24 +34,27 @@ namespace VoiceCommand
             }
         }
 
+        // http://stackoverflow.com/questions/27755271/how-to-invoke-a-method-located-inside-the-android-project-from-the-portable-clas
         private void WitAiActive()
         {
             DLButton.IsEnabled = false;
             WitAiButton.Text = "Stop";
-//            m_oMic.ListDevices();
-//            m_oMic.RecordAndSaveWin();
+            DependencyService.Get<IMicrophone>().PrepareRecording();
+            DependencyService.Get<IMicrophone>().StartRecording();
         }
 
         private async Task WitAiInactive()
         {
             DLButton.IsEnabled = true;
             WitAiButton.Text = "Wit.ai";
-//            m_oMic.StopRecording();
-//            byte[] baAudioFile = m_oMic.ProcessSpeech();
-//            var oResponseStruct = /*await*/ m_oWit.ExecuteItem(baAudioFile);
-
-            Task.WaitAll();
-//            m_oOort.MakeAction(oResponseStruct);
+            //            m_oMic.StopRecording();
+            //            byte[] baAudioFile = m_oMic.ProcessSpeech();
+            //            var oResponseStruct = /*await*/ m_oWit.ExecuteItem(baAudioFile);
+            DependencyService.Get<IMicrophone>().StopRecording();
+            DependencyService.Get<IMicrophone>().PlayAudio();
+            //DependencyService.Get<IMicrophone>().EndRecording();
+            //Task.WaitAll();
+            //            m_oOort.MakeAction(oResponseStruct);
 
         }
 
