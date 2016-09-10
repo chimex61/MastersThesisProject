@@ -81,6 +81,8 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"VoiceCommand.Droid.dll",
 		"FormsViewGroup.dll",
+		"System.Net.Http.Extensions.dll",
+		"System.Net.Http.Primitives.dll",
 		"VoiceCommand.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Forms.Core.dll",
@@ -136,10 +138,9 @@ class MonoPackageManager_Resources {
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
 		"System.ServiceModel.Internals.dll",
-		"RestSharp.Portable.HttpClient.dll",
 		"RestSharp.Portable.Core.dll",
 		"Newtonsoft.Json.dll",
-		"System.Net.Http.Primitives.dll",
+		"RestSharp.Portable.HttpClient.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -4,6 +4,9 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\Voice
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\mscorlib.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Core.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Net.Http.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Net.Http.Extensions.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Net.Http.Primitives.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Xml.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Xml.Linq.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\VoiceCommand.dll
@@ -62,14 +65,11 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\Voice
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Runtime.Serialization.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.ServiceModel.Internals.dll
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\RestSharp.Portable.HttpClient.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\RestSharp.Portable.Core.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\Newtonsoft.Json.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\Microsoft.CSharp.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\Mono.CSharp.dll
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Net.Http.dll
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Net.Http.Primitives.dll
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Net.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\RestSharp.Portable.HttpClient.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.ComponentModel.DataAnnotations.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.ComponentModel.Composition.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\assemblies\System.Numerics.dll

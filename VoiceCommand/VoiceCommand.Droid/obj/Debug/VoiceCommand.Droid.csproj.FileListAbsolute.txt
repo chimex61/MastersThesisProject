@@ -57,8 +57,6 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\uploadflags.txt
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll.mdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll.mdb
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.csprojResolveAssemblyReference.cache
-C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll.config
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.pdb
@@ -81,6 +79,8 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\Voice
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\RestSharp.Portable.Core.xml
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.csprojResolveAssemblyReference.cache
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.pdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\android\bin\com.voicecommanddroid.apk
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\res\drawable\icon.png
@@ -92,5 +92,7 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\Voice
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\res\drawable\welcome_to_voice_command.png
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\R.cs.flag
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\uploadflags.txt
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll.mdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll.mdb

@@ -41,21 +41,24 @@ namespace VoiceCommand
             WitAiButton.Text = "Stop";
             DependencyService.Get<IMicrophone>().PrepareRecording();
             DependencyService.Get<IMicrophone>().StartRecording();
+            //DependencyService.Get<IAudioRecorder>().StartRecording();
         }
 
         private async Task WitAiInactive()
         {
             DLButton.IsEnabled = true;
             WitAiButton.Text = "Wit.ai";
-            //            m_oMic.StopRecording();
-            //            byte[] baAudioFile = m_oMic.ProcessSpeech();
-            //            var oResponseStruct = /*await*/ m_oWit.ExecuteItem(baAudioFile);
-            DependencyService.Get<IMicrophone>().StopRecording();
-            DependencyService.Get<IMicrophone>().PlayAudio();
-            //DependencyService.Get<IMicrophone>().EndRecording();
-            //Task.WaitAll();
-            //            m_oOort.MakeAction(oResponseStruct);
 
+            DependencyService.Get<IMicrophone>().StopRecording();
+            byte [] baAudioFile = DependencyService.Get<IMicrophone>().GetBytesArray();
+
+
+            var oResponceStruct = await m_oWit.ExecuteItem(baAudioFile);
+            //m_oOort.MakeAction(oResponceStruct);
+            //DependencyService.Get<IMicrophone>().PlayAudio();
+            //DependencyService.Get<IMicrophone>().EndRecording();
+
+            //DependencyService.Get<IAudioRecorder>().StopRecording();
         }
 
         private async void OnDLButtonClicked(object sender, EventArgs eventArgs)
