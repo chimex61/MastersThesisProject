@@ -94,5 +94,6 @@ C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\Voice
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\uploadflags.txt
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\System.Net.Http.Extensions.dll
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.dll.mdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\obj\Debug\VoiceCommand.Droid.dll.mdb
 C:\Users\Krzysztof\Documents\GIT\MastersThesisProject\MastersThesisProject\VoiceCommand\VoiceCommand.Droid\bin\Debug\VoiceCommand.Droid.dll.mdb

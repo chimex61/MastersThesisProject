@@ -130,6 +130,16 @@ namespace LibServ
                             {
                                 case "on":
                                     oLED1.TurnOn( Account.Token );
+
+                                    if ( !( string.IsNullOrEmpty( oContent.Color ) ) )
+                                    {
+                                        oLED1.SetColor( Account.Token, WitAiServ.ColorToRgb( oContent.Color ) );
+                                    }
+                                    else if ( !( string.IsNullOrEmpty( oContent.Number.ToString() ) ) )
+                                    {
+                                        oLED1.SetBrightness( Account.Token, oContent.Number.ToString() );
+                                    }
+
                                     break;
                                 case "off":
                                     oLED1.TurnOff( Account.Token );
@@ -163,6 +173,16 @@ namespace LibServ
                     {
                         case "on":
                             oLED2.TurnOn( Account.Token );
+
+                            if (!(string.IsNullOrEmpty(oContent.Color)))
+                            {
+                                oLED2.SetColor(Account.Token, WitAiServ.ColorToRgb(oContent.Color));
+                            }
+                            else if (!(string.IsNullOrEmpty(oContent.Number.ToString())))
+                            {
+                                oLED2.SetBrightness(Account.Token, oContent.Number.ToString());
+                            }
+
                             break;
                         case "off":
                             oLED2.TurnOff( Account.Token );
@@ -170,6 +190,7 @@ namespace LibServ
                         default:
                             break;
                     }
+                  
                     break;
                 default:
                     if( oContent.Device == "finder" &&

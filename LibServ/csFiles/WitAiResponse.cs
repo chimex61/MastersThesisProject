@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.Drawing;
 
 namespace LibServ
 {
     // generated via Json2csharp.com
+
     public class Accessory
-    {
-        public double confidence { get; set; }
-        public string type { get; set; }
-        public string value { get; set; }
-        public bool suggested { get; set; }
-    }
+{
+    public double confidence { get; set; }
+    public string type { get; set; }
+    public string value { get; set; }
+}
 
     public class Location
     {
@@ -25,11 +26,44 @@ namespace LibServ
         public string value { get; set; }
     }
 
+    public class Value
+    {
+        public double confidence { get; set; }
+        public string type { get; set; }
+        public string value { get; set; }
+        public bool suggested { get; set; }
+    }
+
+    public class Attribute
+    {
+        public double confidence { get; set; }
+        public string type { get; set; }
+        public string value { get; set; }
+    }
+
+    public class Number
+    {
+        public int confidence { get; set; }
+        public string type { get; set; }
+        public int value { get; set; }
+    }
+
+    public class Color
+    {
+        public double confidence { get; set; }
+        public string type { get; set; }
+        public string value { get; set; }
+        public bool suggested { get; set; }
+    }
+
     public class Entities
     {
         public List<Accessory> device { get; set; }
         public List<Location> location { get; set; }
         public List<OnOff> on_off { get; set; }
+        public List<Attribute> attribute { get; set; }
+        public List<Number> number { get; set; }
+        public List<Color> color { get; set; }
     }
 
     public class RootObject
@@ -41,8 +75,11 @@ namespace LibServ
 
     public struct ResponseContent
     {
-        public string Device { get; set; }
-        public string Location { get; set; }
-        public string Action { get; set; }
+        public string Device { get; set; } // light, socket...
+        public string Location { get; set; } // kitchen, living room...
+        public string Action { get; set; } // on, off
+        public string Color { get; set; } // red, yelow...
+        public string Attribute { get; set; } // brightness, color
+        public int Number { get; set; } // value of brightness
     }
 }

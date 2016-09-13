@@ -48,11 +48,40 @@ namespace LibServ
             {
                 oDeserializedResponse = oDeserializer.Deserialize<RootObject>( oResponse );
                 oResponseStruct.Device = oDeserializedResponse.entities.device[0].value;
-                oResponseStruct.Location = oDeserializedResponse.entities.location[0].value;
                 oResponseStruct.Action = oDeserializedResponse.entities.on_off[0].value;
-                Console.WriteLine( oDeserializedResponse.entities.device[0].value );
-                Console.WriteLine( oDeserializedResponse.entities.location[0].value );
-                Console.WriteLine( oDeserializedResponse.entities.on_off[0].value );
+                oResponseStruct.Location = oDeserializedResponse.entities.location[0].value;
+
+//                 if ( oResponse.Content.Contains( "attribute") )
+//                 {
+//                     oResponseStruct.Attribute = oDeserializedResponse.entities.attribute[0].value;
+// 
+//                     if ( oResponseStruct.Attribute == "brightness" )
+//                     {
+//                         oResponseStruct.Number = oDeserializedResponse.entities.number[0].value;
+//                     }
+//                     else if ( oResponseStruct.Attribute == "color" )
+//                     {
+//                         oResponseStruct.Color = oDeserializedResponse.entities.color[0].value;
+//                     }
+//                 }
+
+                if ( oResponse.Content.Contains( "color" ) )
+                {
+                    oResponseStruct.Color = oDeserializedResponse.entities.color[0].value;
+                }
+                else if ( oResponse.Content.Contains( "number" ) )
+                {
+                    oResponseStruct.Number = oDeserializedResponse.entities.number[0].value;
+                }
+
+
+
+//                 Console.WriteLine( oDeserializedResponse.entities.device[0].value );
+//                 Console.WriteLine( oDeserializedResponse.entities.location[0].value );
+//                 Console.WriteLine( oDeserializedResponse.entities.on_off[0].value );
+//                 Console.WriteLine( oDeserializedResponse.entities.attribute[0].value );
+//                 Console.WriteLine( oDeserializedResponse.entities.number[0].value );
+//                 Console.WriteLine( oDeserializedResponse.entities.color[0].value );
             }
             catch( Exception oException )
             {
@@ -60,6 +89,34 @@ namespace LibServ
             }
 
             return oResponseStruct;
+        }
+
+        public static string ColorToRgb(string color)
+        {
+            string sReturnColor = "ffffff";
+
+            if ( color == "red" )
+            {
+                sReturnColor = "ff0000";
+            }
+            else if ( color == "green" )
+            {
+                sReturnColor = "006600";
+            }
+            else if (color == "yellow")
+            {
+                sReturnColor = "ffd11a";
+            }
+            else if (color == "white")
+            {
+                sReturnColor = "ffffff";
+            }
+            else if (color == "orange")
+            {
+                sReturnColor = "ff7700";
+            }
+
+            return sReturnColor;
         }
     }
 }

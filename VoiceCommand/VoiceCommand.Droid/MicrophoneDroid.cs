@@ -1,8 +1,10 @@
 ﻿using Android.Media;
 using System.IO;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Android.OS;
+using Java.Security;
 using VoiceCommand.Droid;
 using VoiceCommand.Interfaces;
 using Stream = System.IO.Stream;
@@ -39,10 +41,10 @@ namespace VoiceCommand.Droid
                 m_oRecorder.SetAudioSource(AudioSource.Mic);
                 m_oRecorder.SetOutputFormat(OutputFormat.RawAmr);
                 m_oRecorder.SetAudioEncoder(AudioEncoder.Default);
-//                m_oRecorder.SetOutputFormat(OutputFormat.Mpeg4);
-//                m_oRecorder.SetAudioEncoder(AudioEncoder.Default);
-                m_oRecorder.SetOutputFile(m_oSaveRawPath);
                 m_oRecorder.SetMaxDuration(10000); // 10sec
+                //m_oRecorder.SetAudioSamplingRate(44100);
+                m_oRecorder.SetAudioEncodingBitRate(16);
+                m_oRecorder.SetOutputFile(m_oSaveRawPath);
                 m_oRecorder.Prepare();
             }
             catch (Exception ex)
@@ -53,13 +55,27 @@ namespace VoiceCommand.Droid
 
         public void StartRecording()
         {
-            m_oRecorder.Start();
+            try
+            {
+                m_oRecorder.Start();
+            }
+            catch (Exception ex)
+            {
+                Console.Out.WriteLine("Error: " + ex.Message);
+            }
         }
 
         public void StopRecording()
         {
-            m_oRecorder.Stop();
-            m_oRecorder.Reset();
+            try
+            {
+                m_oRecorder.Stop();
+                m_oRecorder.Reset();
+            }
+            catch (Exception ex)
+            {
+                Console.Out.WriteLine("Error: " + ex.Message);
+            }
         }
 
         public void PlayAudio()
@@ -85,10 +101,12 @@ namespace VoiceCommand.Droid
             BinaryReader oFileReader = new BinaryReader(oFileRawStream);
             byte[] baAudioFile = oFileReader.ReadBytes((Int32) oFileRawStream.Length);
 
+           // baAudioFile = AudioFilter(baAudioFile);
+
             oFileRawStream.Close();
             oFileReader.Close();
 
-            byte[] header = WriteWaveFileHeader(baAudioFile.Length, baAudioFile.Length+44, 44100, 2, 176400);
+            byte[] header = WriteWaveFileHeader(baAudioFile.Length, baAudioFile.Length+44, /*44100*/8000, 2, /*176400*/32000);
 
             BinaryWriter oFileWriter = new BinaryWriter(oFileWavStream);
            
@@ -165,7 +183,37 @@ namespace VoiceCommand.Droid
 
             return header;
         }
+
+        private byte[] AudioFilter(byte[] baAudioFile)
+        {
+            double[] daValues = ByteToDoubleArray(baAudioFile);
+            double[] daFilteredValues = new double[daValues.Length];
+
+            for (int k = 1; k < daFilteredValues.Length; k++)
+            {
+                daFilteredValues[k] = 0.9048 * daFilteredValues[k - 1] + 0.09516 * daValues[k - 1];
+            }
+
+            return DoubleToByteArray(daFilteredValues);
+        }
+
+        private double[] ByteToDoubleArray(byte[] baFile)
+        {  
+            double[] daValues = new double[baFile.Length / 8];
+            for (int i = 0; i < daValues.Length; i++)
+            {
+                daValues[i] = BitConverter.ToDouble(baFile, i*8);
+            }
+            return daValues;
+        }
+
+        private byte[] DoubleToByteArray(double[] daValues)
+        {
+            return daValues.SelectMany(value => BitConverter.GetBytes(value)).ToArray();
+        }
+
     }
+
 
     public class MicrophoneRecorderDroid : IAudioRecorder
     {
@@ -177,7 +225,6 @@ namespace VoiceCommand.Droid
 
         private AudioRecord audRecorder;
         private byte[] audioBuffer;
-        private int audioData;
         public bool IsRecording { get; set; }
         private BinaryWriter bWriter;
 
