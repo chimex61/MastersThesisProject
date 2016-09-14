@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="csFiles\Account.cs" />
     <Compile Include="csFiles\Elements.cs" />
+    <Compile Include="csFiles\IbmBlueMixResponse.cs" />
     <Compile Include="csFiles\IbmBlueMixServ.cs" />
     <Compile Include="csFiles\Microphone.cs" />
     <Compile Include="csFiles\OortServ.cs" />

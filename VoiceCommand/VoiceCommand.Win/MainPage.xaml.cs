@@ -83,12 +83,10 @@ namespace VoiceCommand.Win
             DLButton.Content = "IBM Watson";
             m_oMic.StopRecording();
             byte[] baAudioFile = m_oMic.ProcessSpeech();
-            var ResponseStruct = m_oIbm.ExecuteItem( baAudioFile );
-            //m_oIbm.ExecuteItem();
+            var oResponseStruct = m_oIbm.ExecuteItem( baAudioFile );
 
             Task.WaitAll();
-            //m_oIbm.MakeAction( oResponseStruct );
-           
+            m_oOort.MakeAction( oResponseStruct );
         }
     }
 }

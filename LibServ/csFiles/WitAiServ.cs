@@ -51,20 +51,6 @@ namespace LibServ
                 oResponseStruct.Action = oDeserializedResponse.entities.on_off[0].value;
                 oResponseStruct.Location = oDeserializedResponse.entities.location[0].value;
 
-//                 if ( oResponse.Content.Contains( "attribute") )
-//                 {
-//                     oResponseStruct.Attribute = oDeserializedResponse.entities.attribute[0].value;
-// 
-//                     if ( oResponseStruct.Attribute == "brightness" )
-//                     {
-//                         oResponseStruct.Number = oDeserializedResponse.entities.number[0].value;
-//                     }
-//                     else if ( oResponseStruct.Attribute == "color" )
-//                     {
-//                         oResponseStruct.Color = oDeserializedResponse.entities.color[0].value;
-//                     }
-//                 }
-
                 if ( oResponse.Content.Contains( "color" ) )
                 {
                     oResponseStruct.Color = oDeserializedResponse.entities.color[0].value;
@@ -73,15 +59,6 @@ namespace LibServ
                 {
                     oResponseStruct.Number = oDeserializedResponse.entities.number[0].value;
                 }
-
-
-
-//                 Console.WriteLine( oDeserializedResponse.entities.device[0].value );
-//                 Console.WriteLine( oDeserializedResponse.entities.location[0].value );
-//                 Console.WriteLine( oDeserializedResponse.entities.on_off[0].value );
-//                 Console.WriteLine( oDeserializedResponse.entities.attribute[0].value );
-//                 Console.WriteLine( oDeserializedResponse.entities.number[0].value );
-//                 Console.WriteLine( oDeserializedResponse.entities.color[0].value );
             }
             catch( Exception oException )
             {
